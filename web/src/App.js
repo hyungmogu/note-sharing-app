@@ -5,11 +5,11 @@ function App() {
   return (
     <div className="App">
       <section>
-        <form>
+        <form className="form--type-loginSignup">
           <input type="email" placeholder="Email"/>
           <input type="password" placeholder="Password"/>
-          <button className="button button--state-primary" type="submit">Login</button>
-          <button className="button button--state-secondary" type="submit">Sign up</button>
+          <button className="button button--type-primary" type="submit">Login</button>
+          <button className="button button--type-secondary" type="submit">Sign up</button>
         </form>
       </section>
     </div>

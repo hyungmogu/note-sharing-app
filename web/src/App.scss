@@ -2,6 +2,21 @@
   display: flex;
 }
 
+.form--type-loginSignup {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 15px;
+
+  * {
+    margin-bottom: 5px;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
 input {
   padding: 10px 20px;
   border-radius: 5px;
@@ -24,12 +39,12 @@ input {
     outline: none;
   }
 
-  &.button--state-primary {
+  &.button--type-primary {
     background-color: #07689F;
     color: white;
   }
 
-  &.button--state-secondary {
+  &.button--type-secondary {
     color: #07689F;
   }
 }
