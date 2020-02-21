@@ -8,8 +8,8 @@ function App() {
         <form>
           <input type="email" placeholder="Email"/>
           <input type="password" placeholder="Password"/>
-          <button type="submit">Login</button>
-          <button type="submit">Sign up</button>
+          <button className="button button--state-primary" type="submit">Login</button>
+          <button className="button button--state-secondary" type="submit">Sign up</button>
         </form>
       </section>
     </div>
