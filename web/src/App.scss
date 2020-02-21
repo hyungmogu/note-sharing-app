@@ -1,20 +1,5 @@
 .App {
-  display: flex;
-}
-
-.form--type-loginSignup {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  padding: 15px;
-
-  * {
-    margin-bottom: 5px;
-  }
-
-  *:last-child {
-    margin-bottom: 0;
-  }
+  height: 100vh;
 }
 
 input {
@@ -47,4 +32,26 @@ input {
   &.button--type-secondary {
     color: #07689F;
   }
+}
+
+.form--type-loginSignup {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 15px;
+
+  * {
+    margin-bottom: 5px;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.section--page-loginSignup {
+  height: inherit;
+  background-image: url('https://hwanggu-note-sharing-application.s3-us-west-2.amazonaws.com/background.jpg');
+  background-position: center;
 }

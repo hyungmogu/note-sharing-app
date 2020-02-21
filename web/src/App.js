@@ -4,7 +4,9 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <section>
+      <section
+        className="section--page-loginSignup"
+      >
         <form className="form--type-loginSignup">
           <input type="email" placeholder="Email"/>
           <input type="password" placeholder="Password"/>
