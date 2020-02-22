@@ -41,6 +41,7 @@ input {
   padding: 15px;
   background-color: white;
   text-align: center;
+  margin-left: 20%;
 
   * {
     margin-bottom: 5px;
@@ -61,4 +62,6 @@ input {
   height: inherit;
   background-image: url('https://hwanggu-note-sharing-application.s3-us-west-2.amazonaws.com/background.jpg');
   background-position: center;
+  display: flex;
+  align-items: center;
 }
