@@ -20,13 +20,14 @@ input {
   border-radius: 5px;
   border-color: transparent;
   outline: none;
+  transition: all .5s ease-out;
 
   &.button--type-primary {
     background-color: #07689F;
     color: white;
   }
 
-  &.button--type-primary:focus {
+  &.button--type-primary:hover {
     background-color: darken(#07689F, 10);
     color: white;
   }
