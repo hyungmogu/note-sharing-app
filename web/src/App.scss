@@ -35,6 +35,10 @@ input {
   &.button--type-secondary {
     color: #07689F;
   }
+
+  &.button--type-secondary:hover {
+    color: darken(#07689F, 15);
+  }
 }
 
 .form--type-loginSignup {
