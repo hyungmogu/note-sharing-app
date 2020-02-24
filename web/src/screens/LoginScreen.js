@@ -1,5 +1,10 @@
 import React from 'react';
 
+import {
+    NavLink
+  } from 'react-router-dom';
+
+
 function LoginScreen() {
     return (
         <section
@@ -10,7 +15,7 @@ function LoginScreen() {
             <input type="email" placeholder="Email"/>
             <input type="password" placeholder="Password"/>
             <button className="button button--type-primary" type="submit">Login</button>
-            <button className="button button--type-secondary" type="submit">Sign up</button>
+            <NavLink to="/signup" className="button button--type-secondary">Sign up</NavLink>
             </form>
         </section>
     );
