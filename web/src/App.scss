@@ -1,6 +1,6 @@
 $default-font-size: 11px;
 
-a, button, p {
+a, button, p, span {
   font-size: $default-font-size;
 }
 
@@ -28,6 +28,7 @@ input {
   outline: none;
   text-decoration: none;
   transition: all .5s ease-out;
+  cursor: pointer;
 
   &.button--type-primary {
     background-color: #07689F;
