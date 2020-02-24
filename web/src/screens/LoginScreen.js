@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import {
     NavLink
   } from 'react-router-dom';
 
 
-function LoginScreen() {
-    return (
-        <section
-        className="section--page-loginSignup"
-        >
-            <form className="form--type-loginSignup">
-            <h3>Note Sharing Application</h3>
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <button className="button button--type-primary" type="submit">Login</button>
-            <NavLink to="/signup" className="button button--type-secondary">Sign up</NavLink>
-            </form>
-        </section>
-    );
+class LoginScreen extends Component {
+    render() {
+        return (
+            <section
+            className="section--page-loginSignup"
+            >
+                <form className="form--type-loginSignup">
+                    <h3>Note Sharing Application</h3>
+                    <input type="email" placeholder="Email"/>
+                    <input type="password" placeholder="Password"/>
+                    <button className="button button--type-primary" type="submit">Login</button>
+                    <NavLink to="/signup" className="button button--type-secondary">Sign up</NavLink>
+                </form>
+            </section>
+        );
+    }
 }
 
 export default LoginScreen;
