@@ -3,6 +3,8 @@ $default-font-size: 11px;
 $color-primary: #07689F;
 $color-white: white;
 
+$header-width: 275px;
+
 a, button, p, span {
   font-size: $default-font-size;
 }
@@ -74,22 +76,26 @@ input {
   }
 }
 
-.header--navigation-primary {
-  background-color: $color-primary;
-}
-
 @media screen and (min-width: 930px) {
   .form--type-loginSignup {
     margin-left: 15%;
   }
 }
 
+.header--navigation-primary {
+  background-color: $color-primary;
+  width: $header-width;
+}
+
+.section--screen {
+  display: flex;
+  height: inherit;
+}
 
 .section--screen-loginSignup {
   height: inherit;
   background-image: url('https://hwanggu-note-sharing-application.s3-us-west-2.amazonaws.com/background.jpg');
   background-position: center;
-  display: flex;
   align-items: center;
   justify-content: center;
 }

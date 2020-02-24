@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
+import Header from '../components/Header';
+
 class HomeScreen extends Component {
 
     render() {
         return (
             <section
-            className="section--screen-home"
+            className="section--screen section--screen-home"
             >
-                <main>
+                <Header/>
+                <main className="main--type-content">
 
                 </main>
             </section>
