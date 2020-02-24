@@ -78,7 +78,7 @@ input {
 }
 
 
-.section--page-loginSignup {
+.section--screen-loginSignup {
   height: inherit;
   background-image: url('https://hwanggu-note-sharing-application.s3-us-west-2.amazonaws.com/background.jpg');
   background-position: center;
@@ -88,7 +88,7 @@ input {
 }
 
 @media screen and (min-width: 930px) {
-  .section--page-loginSignup {
+  .section--screen-loginSignup {
     justify-content: start;
   }
 }
