@@ -1,3 +1,9 @@
+$default-font-size: 11px;
+
+a, button, p {
+  font-size: $default-font-size;
+}
+
 .App {
   height: 100vh;
 }
@@ -20,6 +26,7 @@ input {
   border-radius: 5px;
   border-color: transparent;
   outline: none;
+  text-decoration: none;
   transition: all .5s ease-out;
 
   &.button--type-primary {
