@@ -41,7 +41,6 @@ input {
   padding: 20px;
   background-color: white;
   text-align: center;
-  margin-left: 15%;
   border-radius: 5px;
 
   * {
@@ -57,6 +56,12 @@ input {
   }
 }
 
+@media screen and (min-width: 930px) {
+  .form--type-loginSignup {
+    margin-left: 15%;
+  }
+}
+
 
 .section--page-loginSignup {
   height: inherit;
@@ -64,4 +69,11 @@ input {
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 930px) {
+  .section--page-loginSignup {
+    justify-content: start;
+  }
 }
