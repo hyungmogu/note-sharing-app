@@ -1,15 +1,22 @@
 import React from 'react';
 
+import {
+  NavLink
+} from 'react-router-dom';
+
+
 const Header = () => (
-  <section>
-    <span className="icn-logo"><i className="material-icons">code</i></span>
+  <header class="header--navigation-primary">
+    <section>
+        <button class="button--type-add">+</button>
+    </section>
     <ul className="main-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Teachers</a></li>
-      <li><a href="#">Courses</a></li>
+      <li><NavLink to="#">Physics</NavLink></li>
+      <li><NavLink to="#">Social Studies</NavLink></li>
+      <li><NavLink to="#">Biology</NavLink></li>
+      <li><NavLink to="#">English</NavLink></li>
     </ul>
-  </section>
+  </header>
 );
 
 export default Header;

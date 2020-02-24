@@ -7,11 +7,9 @@ class HomeScreen extends Component {
             <section
             className="section--screen-home"
             >
-                <section>
-                </section>
-                <section>
+                <main>
 
-                </section>
+                </main>
             </section>
         );
     }

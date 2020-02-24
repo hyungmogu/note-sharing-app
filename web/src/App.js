@@ -6,6 +6,7 @@ import {
   Switch
 } from 'react-router-dom';
 
+import Header from './components/Header';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
@@ -15,6 +16,7 @@ function App() {
     return (
         <BrowserRouter basename={"note-sharing-app"}>
             <div className="App">
+                <Header/>
                 <Switch>
                     <Route exact path="/" component={LoginScreen}/>
                     <Route exact path="/home" component={HomeScreen}/>
