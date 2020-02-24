@@ -13,7 +13,7 @@ class LoginScreen extends Component {
     render() {
         return (
             <section
-            className="section--screen-loginSignup"
+            className="section--screen section--screen-loginSignup"
             >
                 <form
                     className="form--type-loginSignup"

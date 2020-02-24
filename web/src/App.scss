@@ -90,18 +90,19 @@ input {
 .section--screen {
   display: flex;
   height: inherit;
-}
 
-.section--screen-loginSignup {
-  height: inherit;
-  background-image: url('https://hwanggu-note-sharing-application.s3-us-west-2.amazonaws.com/background.jpg');
-  background-position: center;
-  align-items: center;
-  justify-content: center;
+  &.section--screen-loginSignup {
+    background-image: url('https://hwanggu-note-sharing-application.s3-us-west-2.amazonaws.com/background.jpg');
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 930px) {
-  .section--screen-loginSignup {
-    justify-content: start;
+  .section--screen {
+    &.section--screen-loginSignup {
+      justify-content: start;
+    }
   }
 }
