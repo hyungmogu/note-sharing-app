@@ -76,6 +76,24 @@ input {
   }
 }
 
+.button--type-add {
+  font-size: 30px;
+  font-weight: bold;
+  color: $color-white;
+  background-color: transparent;
+  border-color: transparent;
+  transition: all .5s ease-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: darken($color-primary, 10)
+  }
+}
+
 @media screen and (min-width: 930px) {
   .form--type-loginSignup {
     margin-left: 15%;
