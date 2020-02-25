@@ -90,7 +90,7 @@ input {
   }
 
   &:hover {
-    color: darken($color-primary, 10)
+    color: darken($color-primary, 15);
   }
 }
 
@@ -103,6 +103,24 @@ input {
 .header--navigation-primary {
   background-color: $color-primary;
   width: $header-width;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    color: $color-white;
+    text-decoration: none;
+    transition: all .5s ease-out;
+    padding: 10px 20px;
+  }
+
+  a:hover {
+    color: darken($color-primary, 15);
+  }
 }
 
 .section--screen {
