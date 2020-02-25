@@ -12,6 +12,10 @@ a, button, p, span {
   font-size: $default-font-size;
 }
 
+.App {
+  display: flex;
+}
+
 input {
   padding: 10px 20px;
   border-radius: 5px;
@@ -152,6 +156,7 @@ input {
   height: $header-height-mobile;
   display: flex;
   align-items: center;
+  width: 100%;
 
   section {
     z-index: 0;
