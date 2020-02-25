@@ -54,6 +54,26 @@ input {
   }
 }
 
+.button--type-add {
+  text-align: right;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  color: $color-white;
+  background-color: transparent;
+  border-color: transparent;
+  transition: all .5s ease-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: darken($color-primary, 15);
+  }
+}
+
 .form--type-loginSignup {
   display: flex;
   flex-direction: column;
@@ -76,24 +96,6 @@ input {
   }
 }
 
-.button--type-add {
-  font-size: 30px;
-  font-weight: bold;
-  color: $color-white;
-  background-color: transparent;
-  border-color: transparent;
-  transition: all .5s ease-out;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:hover {
-    color: darken($color-primary, 15);
-  }
-}
-
 @media screen and (min-width: 930px) {
   .form--type-loginSignup {
     margin-left: 15%;
@@ -103,12 +105,6 @@ input {
 .header--navigation-primary {
   background-color: $color-primary;
   width: $header-width;
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
 
   a {
     display: block;
@@ -120,6 +116,17 @@ input {
 
   a:hover {
     color: darken($color-primary, 15);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section--navigation-options {
+    margin-bottom: 20px;
+    padding: 10px 5px;
   }
 }
 
