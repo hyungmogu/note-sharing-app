@@ -4,6 +4,7 @@ $color-primary: #07689F;
 $color-white: white;
 
 $header-width: 250px;
+$header-height-mobile: 50px;
 
 a, button, p, span {
   font-size: $default-font-size;
@@ -70,6 +71,13 @@ input {
   &.button--type-add:hover {
     color: darken($color-primary, 15);
   }
+
+  &.button--type-menu {
+    font-size: 30px;
+    font-weight: bold;
+    color: $color-white;
+  }
+
 }
 
 .form--type-loginSignup {
@@ -120,6 +128,26 @@ input {
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+}
+
+.header--navigation-mobile {
+  background-color: $color-primary;
+  color: $color-white;
+  display: flex;
+
+  section {
+    z-index: 0;
+    position: absolute;
+    height: $header-height-mobile;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  button {
+    z-index: 1;
   }
 }
 
