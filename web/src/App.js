@@ -8,6 +8,7 @@ import {
 
 import Header from './components/Header';
 import HeaderMobile from './components/HeaderMobile';
+import PrivateRoute from './components/PrivateRoute';
 
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
@@ -21,9 +22,9 @@ function App() {
                 <HeaderMobile/>
                 <Header/>
                 <Switch>
-                    <Route exact path="/" component={LoginScreen}/>
-                    <Route exact path="/home" component={HomeScreen}/>
+                    <Route exact path="/login" component={LoginScreen}/>
                     <Route exact path="/signup" component={SignUpScreen}/>
+                    <PrivateRoute exact path="/home" component={HomeScreen}/>
                 </Switch>
             </div>
         </BrowserRouter>
