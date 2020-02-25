@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Header from '../components/Header';
+import ImageFileObject from '../components/ImageFileObject';
 
 class HomeScreen extends Component {
 
@@ -10,7 +10,8 @@ class HomeScreen extends Component {
             className="section--screen section--screen-home"
             >
                 <main className="main--type-content">
-
+                    <h3>Recently Added Notes</h3>
+                    <ImageFileObject/>
                 </main>
             </section>
         );

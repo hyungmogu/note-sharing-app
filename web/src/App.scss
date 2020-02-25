@@ -91,6 +91,14 @@ input {
   }
 }
 
+.div--type-imageFile {
+  img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
 .form--type-loginSignup {
   display: flex;
   flex-direction: column;
