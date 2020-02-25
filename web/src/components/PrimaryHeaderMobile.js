@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
-class HeaderMobile extends Component {
+class PrimaryHeaderMobile extends Component {
 
     render() {
         const {location} = this.props;
@@ -29,4 +29,4 @@ class HeaderMobile extends Component {
     }
 };
 
-export default withRouter(HeaderMobile);
+export default withRouter(PrimaryHeaderMobile);

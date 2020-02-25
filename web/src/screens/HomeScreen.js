@@ -10,8 +10,10 @@ class HomeScreen extends Component {
             className="section--screen section--screen-home"
             >
                 <main className="main--type-content">
-                    <h3>Recently Added Notes</h3>
-                    <ImageFileObject/>
+                    <section>
+                        <h3>Recently Added Notes</h3>
+                        <ImageFileObject/>
+                    </section>
                 </main>
             </section>
         );

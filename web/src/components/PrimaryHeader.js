@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 
-class Header extends Component {
+class PrimaryHeader extends Component {
 
     render() {
         const {location} = this.props;
@@ -38,4 +38,4 @@ class Header extends Component {
     }
 };
 
-export default withRouter(Header);
+export default withRouter(PrimaryHeader);

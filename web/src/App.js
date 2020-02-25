@@ -6,8 +6,8 @@ import {
   Switch
 } from 'react-router-dom';
 
-import Header from './components/Header';
-import HeaderMobile from './components/HeaderMobile';
+import PrimaryHeader from './components/PrimaryHeader';
+import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 import PrivateRoute from './components/PrivateRoute';
 
 import HomeScreen from './screens/HomeScreen';
@@ -19,8 +19,8 @@ function App() {
     return (
         <BrowserRouter basename={"note-sharing-app"}>
             <div className="App">
-                <HeaderMobile/>
-                <Header/>
+                <PrimaryHeaderMobile/>
+                <PrimaryHeader/>
                 <Switch>
                     <Route exact path="/login" component={LoginScreen}/>
                     <Route exact path="/signup" component={SignUpScreen}/>
