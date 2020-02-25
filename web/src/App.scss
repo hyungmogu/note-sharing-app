@@ -120,6 +120,7 @@ input {
 .header--navigation-primary {
   background-color: $color-primary;
   width: $header-width;
+  display: none;
 
   a {
     display: block;
@@ -139,6 +140,13 @@ input {
     padding: 0;
   }
 }
+
+@media screen and (min-width: 930px) {
+  .header--navigation-primary {
+    display: initial;
+  }
+}
+
 
 .header--navigation-mobile {
   background-color: $color-primary;
