@@ -183,6 +183,7 @@ input {
   display: flex;
   height: inherit;
   height: calc(#{$screen-height} - #{$header-height-mobile});
+  flex: 1;
 
   &.section--screen-loginSignup {
     height: $screen-height;
