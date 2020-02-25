@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/note-sharing-app/static/css/main.99e15754.chunk.css",
-    "main.js": "/note-sharing-app/static/js/main.dc386864.chunk.js",
-    "main.js.map": "/note-sharing-app/static/js/main.dc386864.chunk.js.map",
+    "main.css": "/note-sharing-app/static/css/main.4daec310.chunk.css",
+    "main.js": "/note-sharing-app/static/js/main.2bcdef05.chunk.js",
+    "main.js.map": "/note-sharing-app/static/js/main.2bcdef05.chunk.js.map",
     "runtime-main.js": "/note-sharing-app/static/js/runtime-main.de863928.js",
     "runtime-main.js.map": "/note-sharing-app/static/js/runtime-main.de863928.js.map",
-    "static/js/2.f441ff8d.chunk.js": "/note-sharing-app/static/js/2.f441ff8d.chunk.js",
-    "static/js/2.f441ff8d.chunk.js.map": "/note-sharing-app/static/js/2.f441ff8d.chunk.js.map",
+    "static/js/2.a3d2d4de.chunk.js": "/note-sharing-app/static/js/2.a3d2d4de.chunk.js",
+    "static/js/2.a3d2d4de.chunk.js.map": "/note-sharing-app/static/js/2.a3d2d4de.chunk.js.map",
     "index.html": "/note-sharing-app/index.html",
-    "precache-manifest.e82c8247c9fa473050418a66d4199200.js": "/note-sharing-app/precache-manifest.e82c8247c9fa473050418a66d4199200.js",
+    "precache-manifest.e41fe7b7938ca1ef3fb7c81940bcfa6a.js": "/note-sharing-app/precache-manifest.e41fe7b7938ca1ef3fb7c81940bcfa6a.js",
     "service-worker.js": "/note-sharing-app/service-worker.js",
-    "static/css/main.99e15754.chunk.css.map": "/note-sharing-app/static/css/main.99e15754.chunk.css.map",
-    "static/js/2.f441ff8d.chunk.js.LICENSE.txt": "/note-sharing-app/static/js/2.f441ff8d.chunk.js.LICENSE.txt"
+    "static/css/main.4daec310.chunk.css.map": "/note-sharing-app/static/css/main.4daec310.chunk.css.map",
+    "static/js/2.a3d2d4de.chunk.js.LICENSE.txt": "/note-sharing-app/static/js/2.a3d2d4de.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.de863928.js",
-    "static/js/2.f441ff8d.chunk.js",
-    "static/css/main.99e15754.chunk.css",
-    "static/js/main.dc386864.chunk.js"
+    "static/js/2.a3d2d4de.chunk.js",
+    "static/css/main.4daec310.chunk.css",
+    "static/js/main.2bcdef05.chunk.js"
   ]
 }
