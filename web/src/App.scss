@@ -180,6 +180,7 @@ input {
   height: calc(#{$screen-height} - #{$header-height-mobile});
 
   &.section--screen-loginSignup {
+    height: $screen-height;
     background-image: url('https://hwanggu-note-sharing-application.s3-us-west-2.amazonaws.com/background.jpg');
     background-position: center;
     align-items: center;

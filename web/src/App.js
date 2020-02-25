@@ -17,9 +17,9 @@ import './App.scss';
 function App() {
     return (
         <BrowserRouter basename={"note-sharing-app"}>
-            <HeaderMobile/>
-            <Header/>
             <div className="App">
+                <HeaderMobile/>
+                <Header/>
                 <Switch>
                     <Route exact path="/" component={LoginScreen}/>
                     <Route exact path="/home" component={HomeScreen}/>

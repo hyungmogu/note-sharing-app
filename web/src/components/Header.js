@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
@@ -8,6 +8,14 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 class Header extends Component {
 
     render() {
+        const {location} = this.props;
+
+        if (location.pathname.match(/\/login/) ||
+            location.pathname.match(/\/signup/)
+        ) {
+            return null;
+        }
+
         return (
         <header className="header--navigation-primary">
             <nav className="nav--type-desktop">
@@ -30,4 +38,4 @@ class Header extends Component {
     }
 };
 
-export default Header;
+export default withRouter(Header);
