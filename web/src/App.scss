@@ -6,12 +6,10 @@ $color-white: white;
 $header-width: 250px;
 $header-height-mobile: 75px;
 
+$screen-height: 100vh;
+
 a, button, p, span {
   font-size: $default-font-size;
-}
-
-.App {
-  height: 100vh;
 }
 
 input {
@@ -176,11 +174,10 @@ input {
   }
 }
 
-
-
 .section--screen {
   display: flex;
   height: inherit;
+  height: calc(#{$screen-height} - #{$header-height-mobile});
 
   &.section--screen-loginSignup {
     background-image: url('https://hwanggu-note-sharing-application.s3-us-west-2.amazonaws.com/background.jpg');
@@ -192,8 +189,11 @@ input {
 
 @media screen and (min-width: 930px) {
   .section--screen {
+    height: $screen-height;
     &.section--screen-loginSignup {
       justify-content: start;
     }
   }
 }
+
+
