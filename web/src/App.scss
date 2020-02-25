@@ -4,7 +4,7 @@ $color-primary: #07689F;
 $color-white: white;
 
 $header-width: 250px;
-$header-height-mobile: 50px;
+$header-height-mobile: 75px;
 
 a, button, p, span {
   font-size: $default-font-size;
@@ -78,6 +78,15 @@ input {
     color: $color-white;
   }
 
+  &.button--type-menu:focus {
+    outline: none;
+  }
+
+  &.button--type-menu:hover {
+    color: darken($color-primary, 15);
+  }
+
+
 }
 
 .form--type-loginSignup {
@@ -134,7 +143,9 @@ input {
 .header--navigation-mobile {
   background-color: $color-primary;
   color: $color-white;
+  height: $header-height-mobile;
   display: flex;
+  align-items: center;
 
   section {
     z-index: 0;
