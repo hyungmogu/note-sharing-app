@@ -27,10 +27,9 @@ class DirectoryScreen extends Component {
     render() {
         return (
             <section
-            className="section--screen section--screen-home"
+            className="section--screen section--screen-directory"
             >
                 <main className="main--type-content">
-                    <h3>Recently Added Notes</h3>
                     <section className="section--items">
                         {this.state.items.map(({pk, ...props}) =>
                             <ImageFileObject key={pk} {...props}/>

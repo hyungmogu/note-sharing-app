@@ -26,7 +26,7 @@ function App() {
                     <Route exact path="/login" component={LoginScreen}/>
                     <Route exact path="/signup" component={SignUpScreen}/>
                     <PrivateRoute exact path="/home" component={HomeScreen}/>
-                    <PrivateRoute exact path="/note/:note" component={DirectoryScreen}/>
+                    <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
                 </Switch>
             </div>
         </BrowserRouter>

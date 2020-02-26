@@ -26,10 +26,10 @@ class PrimaryHeader extends Component {
                 </section>
                 <section>
                     <ul>
-                        <li><NavLink to="#">Physics</NavLink></li>
-                        <li><NavLink to="#">Social Studies</NavLink></li>
-                        <li><NavLink to="#">Biology</NavLink></li>
-                        <li><NavLink to="#">English</NavLink></li>
+                        <li><NavLink to="/notes/physics">Physics</NavLink></li>
+                        <li><NavLink to="/notes/social_studies">Social Studies</NavLink></li>
+                        <li><NavLink to="/notes/biology">Biology</NavLink></li>
+                        <li><NavLink to="/notes/english">English</NavLink></li>
                         <li>
                             <form className="form--type-header">
                                 <input type="text" placeholder="Name"/>

@@ -10,9 +10,9 @@ const isLoggedIn = true;
   return (
     <Route
       {...props}
-      render={props =>
+      render={renderProps =>
         isLoggedIn ? (
-          <Component {...props} />
+          <Component {...renderProps} />
         ) : (
           <Redirect to={{ pathname: '/login', state: { from: props.location } }} />
         )
