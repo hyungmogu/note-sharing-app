@@ -30,6 +30,13 @@ class PrimaryHeader extends Component {
                         <li><NavLink to="#">Social Studies</NavLink></li>
                         <li><NavLink to="#">Biology</NavLink></li>
                         <li><NavLink to="#">English</NavLink></li>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="Name"/>
+                                <button type="submit">Okay</button>
+                                <button>Cancel</button>
+                            </form>
+                        </li>
                     </ul>
                 </section>
             </nav>
