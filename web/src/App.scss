@@ -98,6 +98,20 @@ input {
       color: darken($color-primary, 15);
     }
   }
+
+  &.button--type-check,
+  &.button--type-cancel {
+    color: $color-white;
+    padding: 10px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: darken($color-primary, 15);
+    }
+  }
 }
 
 .div--type-imageFile {
@@ -182,8 +196,6 @@ input {
   background-color: $color-primary;
   width: $header-width;
   display: none;
-
-
 
   a {
     display: block;
