@@ -162,10 +162,28 @@ input {
   }
 }
 
+.form--type-header {
+  display: flex;
+
+  input {
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    padding: 10px 5px;
+  }
+
+  input::placeholder {
+    color: white;
+  }
+}
+
 .header--navigation-primary {
   background-color: $color-primary;
   width: $header-width;
   display: none;
+
+
 
   a {
     display: block;
@@ -173,6 +191,10 @@ input {
     text-decoration: none;
     transition: all .5s ease-out;
     padding: 10px 20px;
+  }
+
+  form {
+    padding: 10px;
   }
 
   a:hover {

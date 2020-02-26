@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { NavLink, withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 
 class PrimaryHeader extends Component {
@@ -31,10 +31,14 @@ class PrimaryHeader extends Component {
                         <li><NavLink to="#">Biology</NavLink></li>
                         <li><NavLink to="#">English</NavLink></li>
                         <li>
-                            <form>
+                            <form className="form--type-header">
                                 <input type="text" placeholder="Name"/>
-                                <button type="submit">Okay</button>
-                                <button>Cancel</button>
+                                <button type="submit">
+                                    <FontAwesomeIcon icon={faCheck}/>
+                                </button>
+                                <button>
+                                    <FontAwesomeIcon icon={faTimes}/>
+                                </button>
                             </form>
                         </li>
                     </ul>
