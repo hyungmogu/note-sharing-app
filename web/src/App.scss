@@ -102,6 +102,10 @@ input {
 
 .div--type-imageFile {
   $image-dimension: 220px;
+  $container-margin: 15px;
+
+  width: calc(50% - (2 * #{$container-margin}));
+  margin: $container-margin;
 
   cursor: pointer;
 
@@ -121,6 +125,12 @@ input {
     height: $image-dimension;
     object-fit: scale-down;
     margin-bottom: 2px;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .div--type-imageFile {
+    width: initial;
   }
 }
 
@@ -227,10 +237,6 @@ input {
 .section--items {
   display: flex;
   flex-wrap: wrap;
-
-  & > * {
-    margin: 15px;
-  }
 }
 
 .section--screen {
