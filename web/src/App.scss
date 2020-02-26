@@ -2,6 +2,7 @@ $default-font-size: 11px;
 
 $color-primary: #07689F;
 $color-white: white;
+$color-grey: #CCCCCC;
 
 $header-width: 250px;
 $header-height-mobile: 75px;
@@ -100,9 +101,10 @@ input {
 
 .div--type-imageFile {
   img {
+    margin: 0 auto;
     width: 220px;
     height: 220px;
-    object-fit: cover;
+    object-fit: scale-down;
   }
 }
 
