@@ -123,7 +123,11 @@ input {
 
   cursor: pointer;
 
-  &:hover {
+  span {
+    transition: all .5s ease-out;
+  }
+
+  &:hover span {
     color: $color-primary;
   }
 
