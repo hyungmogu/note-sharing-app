@@ -195,7 +195,24 @@ input {
 }
 
 .main--type-content {
-  padding: 40px;
+
+  h3 {
+    padding: 0 30px;
+  }
+
+  .section--items {
+    padding: 15px;
+    padding-top: 0;
+  }
+}
+
+.section--items {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    margin: 15px;
+  }
 }
 
 .section--screen {

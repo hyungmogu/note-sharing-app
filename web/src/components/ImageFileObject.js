@@ -5,9 +5,9 @@ class ImageFileObject extends Component {
     render() {
         return (
             <div className="div--type-imageFile">
-                <img src="https://via.placeholder.com/200"/>
+                <img src={this.props.url}/>
                 <section>
-                    <span>Page 1</span>
+                    <span>{this.props.name}</span>
                 </section>
             </div>
         );
