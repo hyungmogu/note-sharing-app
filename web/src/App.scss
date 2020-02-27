@@ -127,7 +127,7 @@ input {
     }
 
     &:hover {
-      color: darken($color-primary, 15);
+      color: $color-primary;
     }
   }
 }

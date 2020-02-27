@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle } from '@fortawesome/free-regular-svg-icons'
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
 
 class SecondaryHeader extends Component {
 
