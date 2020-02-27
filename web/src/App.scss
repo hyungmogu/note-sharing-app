@@ -174,11 +174,10 @@ input {
   }
 
   img {
-    margin: 0 auto;
+    margin: 2px;
     width: $image-dimension;
     height: $image-dimension;
     object-fit: scale-down;
-    margin-bottom: 2px;
   }
 }
 
