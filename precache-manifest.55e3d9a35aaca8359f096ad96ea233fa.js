@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee81d252541eac292c0655439ebc4eae",
+    "revision": "772478bbd66a66cca9d1b4ac4a874321",
     "url": "/note-sharing-app/index.html"
   },
   {
-    "revision": "349a4e37429ad368dd83",
-    "url": "/note-sharing-app/static/css/main.25f8ab05.chunk.css"
+    "revision": "6cfbc5d0b9c1d805ca5b",
+    "url": "/note-sharing-app/static/css/main.80e46fe4.chunk.css"
   },
   {
     "revision": "0867d828519f6e1bf064",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/note-sharing-app/static/js/2.6f254948.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "349a4e37429ad368dd83",
+    "revision": "6cfbc5d0b9c1d805ca5b",
     "url": "/note-sharing-app/static/js/main.6b7f3eb4.chunk.js"
   },
   {
