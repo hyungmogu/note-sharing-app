@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ImageFileObject extends Component {
+class NoteImageObject extends Component {
 
     render() {
         return (
@@ -14,4 +14,4 @@ class ImageFileObject extends Component {
     }
 };
 
-export default ImageFileObject;
+export default NoteImageObject;

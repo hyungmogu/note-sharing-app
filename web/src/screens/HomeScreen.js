@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ImageFileObject from '../components/ImageFileObject';
+import NoteImageObject from '../components/NoteImageObject';
 
 class HomeScreen extends Component {
 
@@ -33,7 +33,7 @@ class HomeScreen extends Component {
                     <h3>Recently Added Notes</h3>
                     <section className="section--items">
                         {this.state.items.map(({pk, ...props}) =>
-                            <ImageFileObject key={pk} {...props}/>
+                            <NoteImageObject key={pk} {...props}/>
                         )}
                     </section>
                 </main>
