@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import ImageFileObject from '../components/ImageFileObject';
 
+import SecondaryHeader from '../components/SecondaryHeader';
+
 class DirectoryScreen extends Component {
 
     state = {
@@ -29,6 +31,7 @@ class DirectoryScreen extends Component {
             <section
             className="section--screen section--screen-directory"
             >
+                <SecondaryHeader/>
                 <main className="main--type-content">
                     <section className="section--items">
                         {this.state.items.map(({pk, ...props}) =>

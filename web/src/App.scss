@@ -10,6 +10,10 @@ $header-height-mobile: 75px;
 
 $screen-height: 100vh;
 
+$content-padding: 30px;
+$image-dimension: 220px;
+$container-spacing: 15px;
+
 a, button, p, span {
   font-size: $default-font-size;
 }
@@ -17,6 +21,7 @@ a, button, p, span {
 .App {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 @media screen and (min-width: 930px) {
@@ -115,11 +120,8 @@ input {
 }
 
 .div--type-imageFile {
-  $image-dimension: 220px;
-  $container-margin: 15px;
-
-  width: calc(50% - (2 * #{$container-margin}));
-  margin: $container-margin;
+  width: calc(50% - (2 * #{$container-spacing}));
+  margin: $container-spacing;
 
   cursor: pointer;
 
@@ -264,12 +266,20 @@ input {
 .main--type-content {
 
   h3 {
-    padding: 0 30px;
+    padding: 0 calc(#{$container-spacing} * 2);
   }
 
   .section--items {
-    padding: 15px;
+    padding: $container-spacing;
     padding-top: 0;
+  }
+}
+
+.secondaryHeader {
+  padding: 0 calc(#{$container-spacing} * 2);
+
+  .secondaryHeader--h3 {
+    margin: 0;
   }
 }
 
@@ -280,6 +290,7 @@ input {
 
 .section--screen {
   display: flex;
+  flex-direction: column;
   height: inherit;
   height: calc(#{$screen-height} - #{$header-height-mobile});
   flex: 1;
@@ -297,7 +308,7 @@ input {
   .section--screen {
     height: $screen-height;
     &.section--screen-loginSignup {
-      justify-content: start;
+      align-items: start;
     }
   }
 }
