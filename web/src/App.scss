@@ -132,7 +132,8 @@ input {
   }
 
   &.button--type-addUser,
-  &.button--type-uploadFile {
+  &.button--type-uploadFile,
+  &.button--type-downloadFile {
     padding: $container-spacing;
     display: flex;
     align-items: center;
