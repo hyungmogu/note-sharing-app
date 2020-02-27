@@ -4,7 +4,7 @@ class NoteImageObject extends Component {
 
     render() {
         return (
-            <div className="div--type-imageFile">
+            <div className="noteImage">
                 <img src={this.props.url}/>
                 <section>
                     <span>{this.props.name}</span>

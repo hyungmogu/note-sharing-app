@@ -293,10 +293,48 @@ input {
   }
 }
 
+.noteFolder {
+  width: calc(50% - (2 * #{$container-spacing}));
+  margin: $container-spacing;
+  transition: all .5s ease-out;
+  cursor: pointer;
+
+  .icon {
+    width: $image-dimension;
+    height: $image-dimension;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+  }
+
+  svg {
+    margin: 2px;
+    font-size: calc(#{$image-dimension} * 0.75);
+    object-fit: scale-down;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:hover .icon {
+    border-radius: 5px;
+    border: 1px solid $color-primary;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .noteFolder {
+    width: initial;
+  }
+}
+
+
 .noteImage {
   width: calc(50% - (2 * #{$container-spacing}));
   margin: $container-spacing;
-
   cursor: pointer;
 
   span {
