@@ -293,11 +293,19 @@ input {
     display: flex;
     align-items: center;
   }
+
+  .button--type-user {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 930px) {
   .secondaryHeader {
     h3 {
+      display: initial;
+    }
+
+    .button--type-user {
       display: initial;
     }
   }
