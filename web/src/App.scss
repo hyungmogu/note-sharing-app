@@ -117,6 +117,19 @@ input {
       color: darken($color-primary, 15);
     }
   }
+
+  &.button--type-user {
+    font-size: 45px;
+    padding: $container-spacing;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: darken($color-primary, 15);
+    }
+  }
 }
 
 .div--type-imageFile {
