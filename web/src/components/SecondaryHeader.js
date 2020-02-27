@@ -8,7 +8,7 @@ class SecondaryHeader extends Component {
     render() {
         return (
             <header className="secondaryHeader">
-                <h3 className="secondaryHeader--h3">
+                <h3>
                     Physics
                 </h3>
                 <ul>

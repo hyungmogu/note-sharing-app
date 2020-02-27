@@ -311,9 +311,20 @@ input {
 
 .secondaryHeader {
   padding: 0 calc(#{$container-spacing} * 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  .secondaryHeader--h3 {
+  h3 {
     margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
   }
 }
 
