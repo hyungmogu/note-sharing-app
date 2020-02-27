@@ -3,6 +3,7 @@ $default-font-size: 11px;
 $color-primary: #07689F;
 $color-secondary: #A2D6F2;
 $color-white: white;
+$color-black: black;
 $color-grey: #CCCCCC;
 
 $header-width: 250px;
@@ -298,6 +299,8 @@ input {
   margin: $container-spacing;
   transition: all .5s ease-out;
   cursor: pointer;
+  color: $color-black;
+  text-decoration: none;
 
   .icon {
     width: $image-dimension;

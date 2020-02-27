@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { NavLink, withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,16 +8,16 @@ class NoteFolderObject extends Component {
 
     render() {
         return (
-            <div className="noteFolder">
+            <NavLink to="#" className="noteFolder">
                 <section class="icon">
                     <FontAwesomeIcon icon={faFolderOpen}/>
                 </section>
                 <section>
                     <span>{this.props.name}</span>
                 </section>
-            </div>
+            </NavLink>
         );
     }
 };
 
-export default NoteFolderObject;
+export default withRouter(NoteFolderObject);
