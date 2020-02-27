@@ -153,40 +153,6 @@ input {
   }
 }
 
-.div--type-imageFile {
-  width: calc(50% - (2 * #{$container-spacing}));
-  margin: $container-spacing;
-
-  cursor: pointer;
-
-  span {
-    transition: all .5s ease-out;
-  }
-
-  &:hover span {
-    color: $color-primary;
-  }
-
-  &:hover img {
-    border-radius: 5px;
-    border: 1px solid $color-primary;
-    margin: 0;
-  }
-
-  img {
-    margin: 2px;
-    width: $image-dimension;
-    height: $image-dimension;
-    object-fit: scale-down;
-  }
-}
-
-@media screen and (min-width: 930px) {
-  .div--type-imageFile {
-    width: initial;
-  }
-}
-
 .form--type-loginSignup {
   display: flex;
   flex-direction: column;
@@ -324,6 +290,40 @@ input {
     margin: 0;
     display: flex;
     align-items: center;
+  }
+}
+
+.noteImage {
+  width: calc(50% - (2 * #{$container-spacing}));
+  margin: $container-spacing;
+
+  cursor: pointer;
+
+  span {
+    transition: all .5s ease-out;
+  }
+
+  &:hover span {
+    color: $color-primary;
+  }
+
+  &:hover img {
+    border-radius: 5px;
+    border: 1px solid $color-primary;
+    margin: 0;
+  }
+
+  img {
+    margin: 2px;
+    width: $image-dimension;
+    height: $image-dimension;
+    object-fit: scale-down;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .noteImage {
+    width: initial;
   }
 }
 
