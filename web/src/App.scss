@@ -119,8 +119,27 @@ input {
   }
 
   &.button--type-user {
-    font-size: 45px;
+    font-size: 30px;
     padding: $container-spacing;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &.button--type-addUser {
+    padding: $container-spacing;
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 30px;
+      margin-right: 10px;
+    }
 
     &:focus {
       outline: none;
