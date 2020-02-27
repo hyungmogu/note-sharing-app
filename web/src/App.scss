@@ -314,16 +314,18 @@ input {
 }
 
 .noteFolder {
-  width: calc(50% - (2 * #{$container-spacing}));
+  width: 100%;
   margin: $container-spacing;
   transition: all .5s ease-out;
   cursor: pointer;
   color: $color-black;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 
   .icon {
-    width: $image-dimension;
-    height: $image-dimension;
+    width: calc(#{$image-dimension} * 0.6);
+    height: calc(#{$image-dimension} * 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,7 +334,7 @@ input {
 
   svg {
     margin: 2px;
-    font-size: calc(#{$image-dimension} * 0.75);
+    font-size: calc(#{$image-dimension} * 0.4);
     object-fit: scale-down;
   }
 
@@ -344,6 +346,22 @@ input {
 @media screen and (min-width: 930px) {
   .noteFolder {
     width: initial;
+    display: initial;
+
+    .icon {
+      width: $image-dimension;
+      height: $image-dimension;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2px;
+    }
+
+    svg {
+      margin: 2px;
+      font-size: calc(#{$image-dimension} * 0.75);
+      object-fit: scale-down;
+    }
   }
 }
 
