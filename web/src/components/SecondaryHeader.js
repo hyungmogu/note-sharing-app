@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faUserCircle, faCloudUploadAlt, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
+import { faUserPlus, faUserCircle, faCloudUploadAlt, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
 
 class SecondaryHeader extends Component {
 
@@ -26,7 +26,7 @@ class SecondaryHeader extends Component {
                     </li>
                     <li>
                         <button className="button button--type-addUser">
-                            <FontAwesomeIcon icon={faPlus}/>
+                            <FontAwesomeIcon icon={faUserPlus}/>
                             Add User
                         </button>
                     </li>
