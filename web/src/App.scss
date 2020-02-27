@@ -283,6 +283,7 @@ input {
 
   h3 {
     margin: 0;
+    display: none;
   }
 
   ul {
@@ -291,6 +292,14 @@ input {
     margin: 0;
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .secondaryHeader {
+    h3 {
+      display: initial;
+    }
   }
 }
 
