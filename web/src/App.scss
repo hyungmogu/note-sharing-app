@@ -410,7 +410,7 @@ input {
   .noteView {
     img {
       width: $image-view-dimension;
-      height: calc($image-view-dimension / 0.75);
+      height: calc(#{$image-view-dimension} / 0.75);
     }
   }
 }
