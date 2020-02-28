@@ -12,7 +12,7 @@ $header-height-mobile: 60px;
 $screen-height: 100vh;
 
 $content-padding: 24px;
-$image-dimension: 176px;
+$image-file-dimension: 176px;
 $container-spacing: 12px;
 
 a, button, p, span {
@@ -324,8 +324,8 @@ input {
   align-items: center;
 
   .icon {
-    width: calc(#{$image-dimension} * 0.5);
-    height: calc(#{$image-dimension} * 0.5);
+    width: calc(#{$image-file-dimension} * 0.5);
+    height: calc(#{$image-file-dimension} * 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,7 +334,7 @@ input {
 
   svg {
     margin: 2px;
-    font-size: calc(#{$image-dimension} * 0.4);
+    font-size: calc(#{$image-file-dimension} * 0.4);
     object-fit: scale-down;
   }
 
@@ -349,8 +349,8 @@ input {
     display: initial;
 
     .icon {
-      width: $image-dimension;
-      height: $image-dimension;
+      width: $image-file-dimension;
+      height: $image-file-dimension;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -359,7 +359,7 @@ input {
 
     svg {
       margin: 2px;
-      font-size: calc(#{$image-dimension} * 0.75);
+      font-size: calc(#{$image-file-dimension} * 0.75);
       object-fit: scale-down;
     }
   }
@@ -391,8 +391,8 @@ input {
 
   img {
     margin-right: $container-spacing;
-    width: calc(#{$image-dimension} * 0.5);
-    height: calc(#{$image-dimension} * 0.5);
+    width: calc(#{$image-file-dimension} * 0.5);
+    height: calc(#{$image-file-dimension} * 0.5);
     object-fit: scale-down;
   }
 }
@@ -410,9 +410,14 @@ input {
 
     img {
       margin: 2px;
-      width: $image-dimension;
-      height: $image-dimension;
+      width: $image-file-dimension;
+      height: $image-file-dimension;
     }
+  }
+}
+
+.noteView {
+  img {
   }
 }
 
