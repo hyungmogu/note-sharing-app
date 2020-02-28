@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 
+import { NavLink, withRouter } from 'react-router-dom';
+
 class NoteImageObject extends Component {
 
     render() {
         return (
-            <div className="noteImage">
+            <NavLink to="#" className="noteImage">
                 <img src={this.props.url}/>
                 <section>
                     <span>{this.props.name}</span>
                 </section>
-            </div>
+            </NavLink>
         );
     }
 };
 
-export default NoteImageObject;
+export default withRouter(NoteImageObject);

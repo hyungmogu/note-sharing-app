@@ -23,8 +23,8 @@ function App() {
                 <PrimaryHeaderMobile/>
                 <PrimaryHeader/>
                 <Switch>
-                    <Route exact path="/login" component={LoginScreen}/>
-                    <Route exact path="/signup" component={SignUpScreen}/>
+                    <Route path="/login" component={LoginScreen}/>
+                    <Route path="/signup" component={SignUpScreen}/>
                     <PrivateRoute exact path="/home" component={HomeScreen}/>
                     <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
                 </Switch>
