@@ -29,7 +29,7 @@ class HomeScreen extends Component {
             <section
             className="section--screen section--screen-home"
             >
-                <main className="main--type-content">
+                <main className="main">
                     <h3>Recently Added Notes</h3>
                     <section className="section--items">
                         {this.state.items.map(({pk, ...props}) =>
