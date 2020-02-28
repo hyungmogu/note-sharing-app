@@ -271,7 +271,7 @@ input {
     padding: 0 calc(#{$container-spacing} * 2);
   }
 
-  .section--items {
+  & > section {
     padding: $container-spacing;
     padding-top: 0;
   }

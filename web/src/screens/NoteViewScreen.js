@@ -12,8 +12,10 @@ class NoteViewScreen extends Component {
             className="section--screen section--screen-view"
             >
                 <SecondaryHeader/>
-                <main className="main--type-content">
-                    <NoteView/>
+                <main className="main">
+                    <section>
+                        <NoteView/>
+                    </section>
                 </main>
             </section>
         );
