@@ -45,7 +45,6 @@ class DirectoryScreen extends Component {
     }
 
     render() {
-        console.log('here');
         let note = this.props.match.params.note;
         let folder = this.props.match.params.folder;
 
