@@ -10,6 +10,7 @@ import PrimaryHeader from './components/PrimaryHeader';
 import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 import PrivateRoute from './components/PrivateRoute';
 
+import NoteViewScreen from './screens/NoteViewScreen';
 import DirectoryScreen from './screens/DirectoryScreen';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
@@ -26,6 +27,7 @@ function App() {
                     <Route path="/login" component={LoginScreen}/>
                     <Route path="/signup" component={SignUpScreen}/>
                     <PrivateRoute path="/home" component={HomeScreen}/>
+                    <PrivateRoute path="/notes/:note/:folder/:page" component={NoteViewScreen}/>
                     <PrivateRoute path="/notes/:note/:folder" component={DirectoryScreen}/>
                     <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
                 </Switch>
