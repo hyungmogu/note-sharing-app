@@ -285,45 +285,6 @@ input {
   }
 }
 
-.secondaryHeader {
-  padding: 0 calc(#{$container-spacing} * 2);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: calc(#{$container-spacing});
-
-  h3 {
-    margin: 0;
-    display: none;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-
-  .button--type-user {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 930px) {
-  .secondaryHeader {
-    justify-content: space-between;
-
-    h3 {
-      display: initial;
-    }
-
-    .button--type-user {
-      display: initial;
-    }
-  }
-}
-
 .noteFolder {
   width: 100%;
   margin: $container-spacing;
@@ -436,6 +397,13 @@ input {
     width: 100%;
     object-fit: scale-down;
   }
+
+  .navigation {
+    max-width: $image-view-dimension;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 930px) {
@@ -443,6 +411,45 @@ input {
     img {
       width: $image-view-dimension;
       height: calc($image-view-dimension / 0.75);
+    }
+  }
+}
+
+.secondaryHeader {
+  padding: 0 calc(#{$container-spacing} * 2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: calc(#{$container-spacing});
+
+  h3 {
+    margin: 0;
+    display: none;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .button--type-user {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .secondaryHeader {
+    justify-content: space-between;
+
+    h3 {
+      display: initial;
+    }
+
+    .button--type-user {
+      display: initial;
     }
   }
 }
