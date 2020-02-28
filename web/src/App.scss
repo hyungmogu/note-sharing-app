@@ -12,8 +12,10 @@ $header-height-mobile: 60px;
 $screen-height: 100vh;
 
 $content-padding: 24px;
-$image-file-dimension: 176px;
 $container-spacing: 12px;
+
+$image-file-dimension: 176px;
+$image-view-dimension: 500px;
 
 a, button, p, span {
   font-size: $default-font-size;
@@ -417,8 +419,6 @@ input {
 }
 
 .noteView {
-  img {
-  }
 }
 
 .section--items {

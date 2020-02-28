@@ -7,7 +7,7 @@ class NoteView extends Component {
             <section
             className="noteView"
             >
-                <img src={this.props.imageURL}/>
+                <img src="https://via.placeholder.com/750x1000"/>
                 <section class="navigation">
                     <button>&lt;Back</button>
                     <span>Page 1</span>
