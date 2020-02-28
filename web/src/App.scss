@@ -324,12 +324,12 @@ input {
   align-items: center;
 
   .icon {
-    width: calc(#{$image-dimension} * 0.6);
-    height: calc(#{$image-dimension} * 0.6);
+    width: calc(#{$image-dimension} * 0.5);
+    height: calc(#{$image-dimension} * 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2px;
+    margin-right: $container-spacing;
   }
 
   svg {
@@ -391,8 +391,8 @@ input {
 
   img {
     margin-right: $container-spacing;
-    width: calc(#{$image-dimension} * 0.6);
-    height: calc(#{$image-dimension} * 0.6);
+    width: calc(#{$image-dimension} * 0.5);
+    height: calc(#{$image-dimension} * 0.5);
     object-fit: scale-down;
   }
 }
