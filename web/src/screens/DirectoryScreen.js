@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { withRouter } from 'react-router-dom';
 import NoteFolderObject from '../components/NoteFolderObject';
 import NoteImageObject from '../components/NoteImageObject';
 import SecondaryHeader from '../components/SecondaryHeader';
@@ -44,15 +45,11 @@ class DirectoryScreen extends Component {
     }
 
     render() {
+        console.log('here');
+        let note = this.props.match.params.note;
+        let folder = this.props.match.params.folder;
 
-        let isFolder = false;
-
-        try {
-            console.log(this.props.location);
-            isFolder = this.props.location.state.isFolder;
-        } catch(Error) {}
-
-        console.log(isFolder);
+        let isNote = folder ? false : true;
 
         return (
             <section
@@ -61,15 +58,11 @@ class DirectoryScreen extends Component {
                 <SecondaryHeader/>
                 <main className="main--type-content">
                     <section className="section--items">
-                        {!isFolder ? this.state.folders.map((props) => {
-                            console.log('I am here 2');
-                            console.log(isFolder);
-                            return <NoteFolderObject key={props.pk} {...props}/>
+                        {isNote ? this.state.folders.map((props) => {
+                            return <NoteFolderObject key={props.pk} {...props} note={note}/>
                         }) :
 
                         this.state.items.map((props) => {
-                            console.log('I am here 1');
-                            console.log(isFolder);
                             return <NoteImageObject key={props.pk} {...props}/>
                         })}
                     </section>
@@ -79,4 +72,4 @@ class DirectoryScreen extends Component {
     }
 }
 
-export default DirectoryScreen;
+export default withRouter(DirectoryScreen);
