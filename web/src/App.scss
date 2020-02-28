@@ -290,6 +290,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: calc(#{$container-spacing});
 
   h3 {
     margin: 0;
