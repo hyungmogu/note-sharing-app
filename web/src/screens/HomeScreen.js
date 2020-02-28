@@ -31,7 +31,7 @@ class HomeScreen extends Component {
             >
                 <main className="main">
                     <h3>Recently Added Notes</h3>
-                    <section className="section--items">
+                    <section className="items">
                         {this.state.items.map(({pk, ...props}) =>
                             <NoteImageObject key={pk} {...props}/>
                         )}

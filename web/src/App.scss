@@ -265,6 +265,14 @@ input {
   }
 }
 
+@media screen and (min-width: 930px) {
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
 .main {
 
   h3 {
@@ -436,11 +444,6 @@ input {
       height: calc($image-view-dimension / 0.75);
     }
   }
-}
-
-.section--items {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .section--screen {

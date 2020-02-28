@@ -59,7 +59,7 @@ class DirectoryScreen extends Component {
             >
                 <SecondaryHeader/>
                 <main className="main">
-                    <section>
+                    <section class="items">
                         {isNote ? this.state.folders.map((props) => {
                             return <NoteFolderObject key={props.pk} note={note} {...props}/>
                         }) :
