@@ -15,7 +15,7 @@ $content-padding: 24px;
 $container-spacing: 12px;
 
 $image-file-dimension: 176px;
-$image-view-dimension: 500px;
+$image-view-dimension: 450px;
 
 a, button, p, span {
   font-size: $default-font-size;
@@ -419,6 +419,19 @@ input {
 }
 
 .noteView {
+  img {
+    width: 100%;
+    object-fit: scale-down;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .noteView {
+    img {
+      width: $image-view-dimension;
+      height: calc($image-view-dimension / 0.75);
+    }
+  }
 }
 
 .section--items {
@@ -428,7 +441,7 @@ input {
 
 .section--screen {
   display: flex;
-  overflow: scroll;
+  overflow-y: scroll;
   flex-direction: column;
   height: inherit;
   height: calc(#{$screen-height} - #{$header-height-mobile});
