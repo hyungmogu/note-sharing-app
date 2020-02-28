@@ -1,11 +1,29 @@
 import React, { Component } from 'react';
 
 import NoteFolderObject from '../components/NoteFolderObject';
+import NoteImageObject from '../components/NoteImageObject';
 import SecondaryHeader from '../components/SecondaryHeader';
 
 class DirectoryScreen extends Component {
 
     state = {
+        folders: [
+            {
+                pk: 1,
+                slug: 'lecture1',
+                name: 'Lecture 1'
+            },
+            {
+                pk: 2,
+                slug: 'lecture2',
+                name: 'Lecture 2'
+            },
+            {
+                pk: 3,
+                slug: 'lecture3',
+                name: 'Lecture 3'
+            }
+        ],
         items: [
             {
                 pk: 1,
@@ -26,6 +44,16 @@ class DirectoryScreen extends Component {
     }
 
     render() {
+
+        let isFolder = false;
+
+        try {
+            console.log(this.props.location);
+            isFolder = this.props.location.state.isFolder;
+        } catch(Error) {}
+
+        console.log(isFolder);
+
         return (
             <section
             className="section--screen section--screen-directory"
@@ -33,9 +61,17 @@ class DirectoryScreen extends Component {
                 <SecondaryHeader/>
                 <main className="main--type-content">
                     <section className="section--items">
-                        {this.state.items.map(({pk, ...props}) =>
-                            <NoteFolderObject key={pk} {...props}/>
-                        )}
+                        {!isFolder ? this.state.folders.map((props) => {
+                            console.log('I am here 2');
+                            console.log(isFolder);
+                            return <NoteFolderObject key={props.pk} {...props}/>
+                        }) :
+
+                        this.state.items.map((props) => {
+                            console.log('I am here 1');
+                            console.log(isFolder);
+                            return <NoteImageObject key={props.pk} {...props}/>
+                        })}
                     </section>
                 </main>
             </section>
