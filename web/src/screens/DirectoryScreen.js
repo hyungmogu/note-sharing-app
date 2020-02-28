@@ -29,16 +29,19 @@ class DirectoryScreen extends Component {
             {
                 pk: 1,
                 name: 'Page 1',
+                slug: 'page1',
                 url: 'https://via.placeholder.com/200'
             },
             {
                 pk: 2,
                 name: 'Page 2',
+                slug: 'page2',
                 url: 'https://via.placeholder.com/200'
             },
             {
                 pk: 3,
                 name: 'Page 3',
+                slug: 'page3',
                 url: 'https://via.placeholder.com/200'
             }
         ]
