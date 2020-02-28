@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { withRouter } from 'react-router-dom';
 import SecondaryHeader from '../components/SecondaryHeader';
+import NoteView from '../components/NoteView';
 
 class NoteViewScreen extends Component {
 
@@ -12,12 +13,7 @@ class NoteViewScreen extends Component {
             >
                 <SecondaryHeader/>
                 <main className="main--type-content">
-                    <img src={this.props.imageURL}/>
-                    <section>
-                        <button>&lt;Back</button>
-                        <span>Page 1</span>
-                        <button>Next&gt;</button>
-                    </section>
+                    <NoteView/>
                 </main>
             </section>
         );
