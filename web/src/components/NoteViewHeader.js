@@ -6,7 +6,7 @@ class NoteViewHeader extends Component {
 
     render() {
         return (
-        <header>
+        <header class="">
 
         </header>
         );
