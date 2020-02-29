@@ -431,6 +431,16 @@ input {
   }
 }
 
+.noteViewHeader {
+  display: none;
+}
+
+@media screen and (min-width: 930px) {
+  .noteViewHeader {
+    display: initial;
+  }
+}
+
 .secondaryHeader {
   padding: 0 calc(#{$container-spacing} * 2);
   display: flex;

@@ -53,8 +53,6 @@ class NoteViewHeader extends Component {
                 return null;
         }
 
-        console.log('here');
-
         return (
         <header class="noteViewHeader">
             {this.state.items.map( props =>
