@@ -201,7 +201,7 @@ input {
   }
 }
 
-.header--navigation-primary {
+.primaryHeader {
   background-color: $color-primary;
   width: $header-width;
   display: none;
@@ -230,7 +230,7 @@ input {
 }
 
 @media screen and (min-width: 930px) {
-  .header--navigation-primary {
+  .primaryHeader {
     display: initial;
   }
 }

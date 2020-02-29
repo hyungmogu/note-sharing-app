@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import { NavLink, withRouter } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faCheck, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faCheck, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 class PrimaryHeader extends Component {
@@ -17,7 +17,7 @@ class PrimaryHeader extends Component {
         }
 
         return (
-        <header className="header--navigation-primary">
+        <header className="primaryHeader">
             <nav className="nav--type-desktop">
                 <section>
                     <button className="button button--type-add">
