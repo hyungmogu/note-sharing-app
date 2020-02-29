@@ -9,9 +9,9 @@ class NoteView extends Component {
             >
                 <img src="https://via.placeholder.com/750x1000"/>
                 <section class="navigation">
-                    <button>&lt;Back</button>
+                    <button>&lt; Back</button>
                     <span>Page 1</span>
-                    <button>Next&gt;</button>
+                    <button>Next &gt;</button>
                 </section>
             </section>
         );
