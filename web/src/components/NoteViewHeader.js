@@ -53,10 +53,16 @@ class NoteViewHeader extends Component {
                 return null;
         }
 
+        let note = match.params.note;
+        let folder = match.params.folder;
+
+        console.log(note);
+        console.log(folder);
+
         return (
         <header class="noteViewHeader">
             {this.state.items.map( props =>
-                <NoteImageObject key={props.pk} {...props}/>
+                <NoteImageObject key={props.pk} note={note} folder={folder} {...props}/>
             )}
         </header>
         );

@@ -432,7 +432,37 @@ input {
 }
 
 .noteViewHeader {
+  background-color: $color-primary;
+  width: $header-width;
   display: none;
+
+  a {
+    display: block;
+    color: $color-white;
+    text-decoration: none;
+    transition: all .5s ease-out;
+    padding: 10px 20px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  a:hover {
+    color: darken($color-primary, 15);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .noteImage {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (min-width: 930px) {
