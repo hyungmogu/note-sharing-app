@@ -6,6 +6,7 @@ import {
   Switch
 } from 'react-router-dom';
 
+import NoteViewHeader from './components/NoteViewHeader';
 import PrimaryHeader from './components/PrimaryHeader';
 import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 import PrivateRoute from './components/PrivateRoute';
@@ -21,6 +22,7 @@ function App() {
     return (
         <BrowserRouter basename={"note-sharing-app"}>
             <div className="App">
+                <NoteViewHeader/>
                 <PrimaryHeaderMobile/>
                 <PrimaryHeader/>
                 <Switch>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { matchPath } from 'react-router'
 import { NavLink, withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faCheck, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
@@ -14,6 +15,21 @@ class PrimaryHeader extends Component {
             location.pathname.match(/\/signup/)
         ) {
             return null;
+        }
+
+        console.log(this.props);
+
+        let match = matchPath(this.props.history.location.pathname, {
+            path: '/notes/:note/:folder/:page/',
+            exact: true,
+            strict: false
+          });
+
+
+        if ((match.params.note) &&
+            (match.params.folder) &&
+            (match.params.page)) {
+                return null;
         }
 
         return (

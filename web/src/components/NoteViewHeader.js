@@ -6,8 +6,10 @@ class NoteViewHeader extends Component {
 
     render() {
         return (
-        <header class="">
+        <header class="noteViewHeader">
+            <nav>
 
+            </nav>
         </header>
         );
     }
