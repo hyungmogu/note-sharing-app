@@ -25,6 +25,18 @@ class NoteViewHeader extends Component {
                 name: 'Page 3',
                 slug: 'page3',
                 url: 'https://via.placeholder.com/200'
+            },
+            {
+                pk: 4,
+                name: 'Page 4',
+                slug: 'page2',
+                url: 'https://via.placeholder.com/200'
+            },
+            {
+                pk: 5,
+                name: 'Page 5',
+                slug: 'page3',
+                url: 'https://via.placeholder.com/200'
             }
         ]
     }
@@ -55,9 +67,6 @@ class NoteViewHeader extends Component {
 
         let note = match.params.note;
         let folder = match.params.folder;
-
-        console.log(note);
-        console.log(folder);
 
         return (
         <header class="noteViewHeader">
