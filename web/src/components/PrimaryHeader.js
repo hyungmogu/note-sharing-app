@@ -17,8 +17,6 @@ class PrimaryHeader extends Component {
             return null;
         }
 
-        console.log(this.props);
-
         let match = matchPath(this.props.history.location.pathname, {
             path: '/notes/:note/:folder/:page/',
             exact: true,
@@ -26,7 +24,9 @@ class PrimaryHeader extends Component {
           });
 
 
-        if ((match.params.note) &&
+        if ((match) &&
+            (match.params) &&
+            (match.params.note) &&
             (match.params.folder) &&
             (match.params.page)) {
                 return null;
