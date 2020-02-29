@@ -417,8 +417,12 @@ input {
   .navigation {
     max-width: $image-view-dimension;
     width: 100%;
+    justify-content: center;
     display: flex;
-    justify-content: space-between;
+
+    button {
+      display: none;
+    }
   }
 }
 
@@ -427,6 +431,13 @@ input {
     img {
       width: $image-view-dimension;
       height: calc(#{$image-view-dimension} / 0.75);
+    }
+
+    .navigation {
+      justify-content: space-between;
+      button {
+        display: initial;
+      }
     }
   }
 }
