@@ -434,6 +434,7 @@ input {
 .noteViewHeader {
   background-color: $color-primary;
   width: $header-width;
+  overflow-y: scroll;
   display: none;
 
   a {
@@ -459,7 +460,18 @@ input {
   }
 
   .noteImage {
+
+    &:hover span {
+      color: darken($color-primary, 15);
+    }
+
+    &:hover img {
+      border: none;
+      margin: 2px;
+    }
+
     img {
+      margin: 2px;
       width: 100%;
     }
   }
