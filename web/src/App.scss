@@ -396,6 +396,7 @@ input {
   img {
     width: 100%;
     object-fit: scale-down;
+    margin-bottom: calc(#{$container-spacing} * 0.75);
   }
 
   .navigation {
