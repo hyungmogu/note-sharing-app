@@ -45,7 +45,7 @@ class PrimaryHeaderMobile extends Component {
                     <li>
                         <form className="form--type-header">
                             <input type="text" placeholder="Name"/>
-                            <button className="button button--type-check" type="submit">
+                            <button className="button button--check" type="submit">
                                 <FontAwesomeIcon icon={faCheck}/>
                             </button>
                             <button className="button button--type-cancel">

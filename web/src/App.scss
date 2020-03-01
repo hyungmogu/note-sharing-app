@@ -93,7 +93,7 @@ input {
 
   }
 
-  &.button--type-menu {
+  &.button--menu {
     font-size: 24px;
     font-weight: bold;
     color: $color-white;
@@ -107,7 +107,7 @@ input {
     }
   }
 
-  &.button--type-check,
+  &.button--check,
   &.button--type-cancel {
     color: $color-white;
     padding: 10px;
