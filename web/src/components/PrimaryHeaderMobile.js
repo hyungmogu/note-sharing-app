@@ -25,7 +25,7 @@ class PrimaryHeaderMobile extends Component {
                     <strong>Note Sharing Application</strong>
                 </section>
             </section>
-            <nav>
+            <nav className="primaryHeaderMobile--navigation">
                 <ul>
                     <li><NavLink to="/notes/physics">Physics</NavLink></li>
                     <li><NavLink to="/notes/social_studies">Social Studies</NavLink></li>

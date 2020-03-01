@@ -486,6 +486,14 @@ input {
     width: 100%;
   }
 
+  .primaryHeaderMobile--navigation {
+    border-top: 1px solid $color-white;
+    position: absolute;
+    height: calc(100% - #{$header-height-mobile});
+    width: 100%;
+    background-color: $color-primary;
+  }
+
   button {
     z-index: 1;
   }
