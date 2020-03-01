@@ -235,36 +235,6 @@ input {
   }
 }
 
-
-.header--navigation-mobile {
-  background-color: $color-primary;
-  color: $color-white;
-  height: $header-height-mobile;
-  display: flex;
-  align-items: center;
-  width: 100%;
-
-  section {
-    z-index: 0;
-    position: absolute;
-    height: $header-height-mobile;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  button {
-    z-index: 1;
-  }
-}
-
-@media screen and (min-width: 930px) {
-  .header--navigation-mobile {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 930px) {
   .items {
     display: flex;
@@ -491,6 +461,35 @@ input {
 @media screen and (min-width: 930px) {
   .noteViewHeader {
     display: initial;
+  }
+}
+
+.primaryHeaderMobile {
+  background-color: $color-primary;
+  color: $color-white;
+  height: $header-height-mobile;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  section {
+    z-index: 0;
+    position: absolute;
+    height: $header-height-mobile;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  button {
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .primaryHeaderMobile {
+    display: none;
   }
 }
 

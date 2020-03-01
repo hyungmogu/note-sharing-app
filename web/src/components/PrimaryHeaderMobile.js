@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 import { NavLink, withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-
+import { faBars, faCheck, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 class PrimaryHeaderMobile extends Component {
 
@@ -17,13 +16,32 @@ class PrimaryHeaderMobile extends Component {
         }
 
         return (
-        <header className="header--navigation-mobile">
+        <header className="primaryHeaderMobile">
             <button className="button button--type-menu">
                 <FontAwesomeIcon icon={faBars}/>
             </button>
             <section>
                 <strong>Note Sharing Application</strong>
             </section>
+            <nav>
+                <ul>
+                    <li><NavLink to="/notes/physics">Physics</NavLink></li>
+                    <li><NavLink to="/notes/social_studies">Social Studies</NavLink></li>
+                    <li><NavLink to="/notes/biology">Biology</NavLink></li>
+                    <li><NavLink to="/notes/english">English</NavLink></li>
+                    <li>
+                        <form className="form--type-header">
+                            <input type="text" placeholder="Name"/>
+                            <button className="button button--type-check" type="submit">
+                                <FontAwesomeIcon icon={faCheck}/>
+                            </button>
+                            <button className="button button--type-cancel">
+                                <FontAwesomeIcon icon={faTrashAlt}/>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
         </header>
         );
     }
