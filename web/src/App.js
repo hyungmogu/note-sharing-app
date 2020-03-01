@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import {
   BrowserRouter,
@@ -18,24 +18,26 @@ import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import './App.scss';
 
-function App() {
-    return (
-        <BrowserRouter basename={"note-sharing-app"}>
-            <div className="App">
-                <NoteViewHeader/>
-                <PrimaryHeaderMobile/>
-                <PrimaryHeader/>
-                <Switch>
-                    <Route path="/login" component={LoginScreen}/>
-                    <Route path="/signup" component={SignUpScreen}/>
-                    <PrivateRoute path="/home" component={HomeScreen}/>
-                    <PrivateRoute path="/notes/:note/:folder/:page" component={NoteViewScreen}/>
-                    <PrivateRoute path="/notes/:note/:folder" component={DirectoryScreen}/>
-                    <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
-                </Switch>
-            </div>
-        </BrowserRouter>
-    );
+class App extends Component {
+    render() {
+        return (
+            <BrowserRouter basename={"note-sharing-app"}>
+                <div className="App">
+                    <NoteViewHeader/>
+                    <PrimaryHeaderMobile/>
+                    <PrimaryHeader/>
+                    <Switch>
+                        <Route path="/login" component={LoginScreen}/>
+                        <Route path="/signup" component={SignUpScreen}/>
+                        <PrivateRoute path="/home" component={HomeScreen}/>
+                        <PrivateRoute path="/notes/:note/:folder/:page" component={NoteViewScreen}/>
+                        <PrivateRoute path="/notes/:note/:folder" component={DirectoryScreen}/>
+                        <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
+                    </Switch>
+                </div>
+            </BrowserRouter>
+        );
+    }
 }
 
 export default App;
