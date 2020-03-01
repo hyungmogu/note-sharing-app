@@ -21,6 +21,31 @@ import SignUpScreen from './screens/SignUpScreen';
 import './App.scss';
 
 class App extends Component {
+
+    state = {
+        user: {
+            name: null,
+            email: null,
+            authToken: null
+        },
+        notes: {
+            slug: null,
+            imported: false,
+            items: []
+        },
+        folders: {
+            slug: null,
+            imported: false,
+            items: []
+        },
+        pages: {
+            slug: null,
+            imported: false,
+            currentIndex: null,
+            items: []
+        }
+    }
+
     render() {
         return (
             <AppProvider>
