@@ -29,7 +29,7 @@ class PrimaryHeaderMobile extends Component {
         return (
         <header className="primaryHeaderMobile">
             <section className="primaryHeaderMobile--header">
-                <button className="button button--type-menu" onClick={this.handleMobileMenuClick}>
+                <button className="button button--menu" onClick={this.handleMobileMenuClick}>
                     <FontAwesomeIcon icon={faBars}/>
                 </button>
                 <section className="primaryHeaderMobile--title">
