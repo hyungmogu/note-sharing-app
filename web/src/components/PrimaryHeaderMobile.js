@@ -17,6 +17,10 @@ class PrimaryHeaderMobile extends Component {
         this.navRef.current.classList.add('open');
     }
 
+    handleCloseMenu = () => {
+        this.navRef.current.classList.remove('open');
+    }
+
     render() {
         const {location} = this.props;
 
@@ -33,15 +37,15 @@ class PrimaryHeaderMobile extends Component {
                     <FontAwesomeIcon icon={faBars}/>
                 </button>
                 <section className="primaryHeaderMobile--title">
-                    <NavLink exact to="/home"><strong>Note Sharing Application</strong></NavLink>
+                    <NavLink onClick={this.handleCloseMenu} exact to="/home"><strong>Note Sharing Application</strong></NavLink>
                 </section>
             </section>
             <nav ref={this.navRef} className="primaryHeaderMobile--navigation">
                 <ul>
-                    <li><NavLink to="/notes/physics">Physics</NavLink></li>
-                    <li><NavLink to="/notes/social_studies">Social Studies</NavLink></li>
-                    <li><NavLink to="/notes/biology">Biology</NavLink></li>
-                    <li><NavLink to="/notes/english">English</NavLink></li>
+                    <li><NavLink onClick={this.handleCloseMenu} to="/notes/physics">Physics</NavLink></li>
+                    <li><NavLink onClick={this.handleCloseMenu} to="/notes/social_studies">Social Studies</NavLink></li>
+                    <li><NavLink onClick={this.handleCloseMenu} to="/notes/biology">Biology</NavLink></li>
+                    <li><NavLink onClick={this.handleCloseMenu} to="/notes/english">English</NavLink></li>
                     <li>
                         <form className="form--header">
                             <input type="text" placeholder="Name"/>
