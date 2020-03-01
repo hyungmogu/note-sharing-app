@@ -52,7 +52,7 @@ class PrimaryHeader extends Component {
                                 <button className="button button--check" type="submit">
                                     <FontAwesomeIcon icon={faCheck}/>
                                 </button>
-                                <button className="button button--type-cancel">
+                                <button className="button button--cancel">
                                     <FontAwesomeIcon icon={faTrashAlt}/>
                                 </button>
                             </form>
