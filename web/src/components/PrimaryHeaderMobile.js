@@ -6,6 +6,17 @@ import { faBars, faCheck, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 class PrimaryHeaderMobile extends Component {
 
+    navRef = React.createRef();
+
+    handleMobileMenuClick = () => {
+        if (this.navRef.current.classList.contains('open')) {
+            this.navRef.current.classList.remove('open');
+            return;
+        }
+
+        this.navRef.current.classList.add('open');
+    }
+
     render() {
         const {location} = this.props;
 
@@ -18,14 +29,14 @@ class PrimaryHeaderMobile extends Component {
         return (
         <header className="primaryHeaderMobile">
             <section className="primaryHeaderMobile--header">
-                <button className="button button--type-menu">
+                <button className="button button--type-menu" onClick={this.handleMobileMenuClick}>
                     <FontAwesomeIcon icon={faBars}/>
                 </button>
                 <section className="primaryHeaderMobile--title">
                     <strong>Note Sharing Application</strong>
                 </section>
             </section>
-            <nav className="primaryHeaderMobile--navigation">
+            <nav ref={this.navRef} className="primaryHeaderMobile--navigation">
                 <ul>
                     <li><NavLink to="/notes/physics">Physics</NavLink></li>
                     <li><NavLink to="/notes/social_studies">Social Studies</NavLink></li>
