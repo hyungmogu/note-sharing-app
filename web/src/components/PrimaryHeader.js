@@ -47,7 +47,7 @@ class PrimaryHeader extends Component {
                         <li><NavLink to="/notes/biology">Biology</NavLink></li>
                         <li><NavLink to="/notes/english">English</NavLink></li>
                         <li>
-                            <form className="form--type-header">
+                            <form className="form--header">
                                 <input type="text" placeholder="Name"/>
                                 <button className="button button--check" type="submit">
                                     <FontAwesomeIcon icon={faCheck}/>
