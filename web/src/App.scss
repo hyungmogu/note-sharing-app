@@ -468,11 +468,15 @@ input {
   background-color: $color-primary;
   color: $color-white;
   height: $header-height-mobile;
-  display: flex;
-  align-items: center;
-  width: 100%;
 
-  section {
+  .primaryHeaderMobile--header {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .primaryHeaderMobile--title {
     z-index: 0;
     position: absolute;
     height: $header-height-mobile;

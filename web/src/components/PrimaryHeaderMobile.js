@@ -17,11 +17,13 @@ class PrimaryHeaderMobile extends Component {
 
         return (
         <header className="primaryHeaderMobile">
-            <button className="button button--type-menu">
-                <FontAwesomeIcon icon={faBars}/>
-            </button>
-            <section>
-                <strong>Note Sharing Application</strong>
+            <section className="primaryHeaderMobile--header">
+                <button className="button button--type-menu">
+                    <FontAwesomeIcon icon={faBars}/>
+                </button>
+                <section className="primaryHeaderMobile--title">
+                    <strong>Note Sharing Application</strong>
+                </section>
             </section>
             <nav>
                 <ul>
