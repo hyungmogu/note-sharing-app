@@ -48,7 +48,7 @@ class App extends Component {
 
     render() {
         return (
-            <AppProvider>
+            <AppProvider value={{...this.state}}>
                 <BrowserRouter basename={"note-sharing-app"}>
                     <div className="App">
                         <NoteViewHeader/>
