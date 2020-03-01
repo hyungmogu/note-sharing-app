@@ -473,6 +473,24 @@ input {
   color: $color-white;
   height: $header-height-mobile;
 
+  a {
+    display: block;
+    color: $color-white;
+    text-decoration: none;
+    transition: all .5s ease-out;
+    padding: 10px 20px;
+  }
+
+  a:hover {
+    color: darken($color-primary, 15);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
   .primaryHeaderMobile--header {
     height: inherit;
     display: flex;
