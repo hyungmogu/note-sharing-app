@@ -464,6 +464,10 @@ input {
   }
 }
 
+.open {
+  display: initial !important;
+}
+
 .primaryHeaderMobile {
   background-color: $color-primary;
   color: $color-white;
@@ -492,6 +496,7 @@ input {
     height: calc(100% - #{$header-height-mobile});
     width: 100%;
     background-color: $color-primary;
+    display: none;
   }
 
   button {
