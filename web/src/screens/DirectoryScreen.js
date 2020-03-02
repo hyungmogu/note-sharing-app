@@ -29,7 +29,7 @@ class DirectoryScreen extends Component {
                         }) :
 
                         pages.map((props) => {
-                            return <NoteImageObject key={props.pk} note={noteSlug} folder={folderSlug} {...props}/>
+                            return <NoteImageObject key={props.pk} {...props}/>
                         })}
                     </section>
                 </main>
