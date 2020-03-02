@@ -380,7 +380,7 @@ input {
 
   img {
     width: 100%;
-    object-fit: scale-down;
+    object-fit: contain;
     margin-bottom: calc(#{$container-spacing} * 0.75);
   }
 
