@@ -9,7 +9,7 @@ class NoteViewScreen extends Component {
     render() {
         return (
             <section
-            className="section--screen screen--view"
+            className="screen screen--view"
             >
                 <SecondaryHeader/>
                 <main className="main">
