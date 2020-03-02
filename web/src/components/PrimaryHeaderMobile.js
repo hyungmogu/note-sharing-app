@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { NavLink, withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faCheck, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCheck, faTrashAlt, faPlus } from '@fortawesome/free-solid-svg-icons'
 
 class PrimaryHeaderMobile extends Component {
 
@@ -41,6 +41,11 @@ class PrimaryHeaderMobile extends Component {
                 </section>
             </section>
             <nav ref={this.navRef} className="primaryHeaderMobile--navigation">
+                <section>
+                    <button className="button button--type-add">
+                        <FontAwesomeIcon icon={faPlus}/>
+                    </button>
+                </section>
                 <ul>
                     <li><NavLink onClick={this.handleCloseMenu} to="/notes/physics">Physics</NavLink></li>
                     <li><NavLink onClick={this.handleCloseMenu} to="/notes/social_studies">Social Studies</NavLink></li>
