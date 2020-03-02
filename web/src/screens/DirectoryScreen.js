@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { withRouter } from 'react-router-dom';
+import { AppConsumer } from '../components/Context';
 import NoteFolderObject from '../components/NoteFolderObject';
 import NoteImageObject from '../components/NoteImageObject';
 import SecondaryHeader from '../components/SecondaryHeader';
@@ -8,10 +9,13 @@ import SecondaryHeader from '../components/SecondaryHeader';
 class DirectoryScreen extends Component {
 
     render() {
-        let note = this.props.match.params.note;
-        let folder = this.props.match.params.folder;
+        let noteSlug = this.props.match.params.note;
+        let folderSlug = this.props.match.params.folder;
 
-        let isNote = folder ? false : true;
+        let isNote = folderSlug ? false : true;
+
+        let folders = this.props.appContext.folders.items;
+        let pages = this.props.appContext.pages.items;
 
         return (
             <section
@@ -20,12 +24,12 @@ class DirectoryScreen extends Component {
                 <SecondaryHeader/>
                 <main className="main">
                     <section class="items ">
-                        {isNote ? this.state.folders.map((props) => {
-                            return <NoteFolderObject key={props.pk} note={note} {...props}/>
+                        {isNote ? folders.map((props) => {
+                            return <NoteFolderObject key={props.pk} note={noteSlug} {...props}/>
                         }) :
 
-                        this.state.items.map((props) => {
-                            return <NoteImageObject key={props.pk} note={note} folder={folder} {...props}/>
+                        pages.map((props) => {
+                            return <NoteImageObject key={props.pk} note={noteSlug} folder={folderSlug} {...props}/>
                         })}
                     </section>
                 </main>
@@ -34,4 +38,17 @@ class DirectoryScreen extends Component {
     }
 }
 
-export default withRouter(DirectoryScreen);
+let DirectoryScreenWithRoute = withRouter(DirectoryScreen);
+
+export default React.forwardRef((props, ref) => (
+    <AppConsumer>
+        { appContext =>
+            <DirectoryScreenWithRoute
+                {...props}
+                appContext={appContext}
+                ref={ref}
+            />
+        }
+    </AppConsumer>
+));
+
