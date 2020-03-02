@@ -10,7 +10,7 @@ class HomeScreen extends Component {
 
         return (
             <section
-            className="section--screen section--screen-home"
+            className="section--screen screen--home"
             >
                 <main className="main">
                     <h3>Recently Added Notes</h3>
