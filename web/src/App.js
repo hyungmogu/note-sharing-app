@@ -51,8 +51,11 @@ class App extends Component {
             items: []
         },
         folders: {
-            slug: null,
-            imported: false,
+            info: {
+                slug: null,
+                name: null,
+                path: null
+            },
             items: [
                 {
                     pk: 1,
@@ -72,8 +75,11 @@ class App extends Component {
             ]
         },
         pages: {
-            slug: null,
-            imported: false,
+            info: {
+                slug: null,
+                name: null,
+                path: null
+            },
             currentIndex: null,
             items: [
                 {
