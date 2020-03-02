@@ -59,17 +59,17 @@ class App extends Component {
             items: [
                 {
                     pk: 1,
-                    slug: 'lecture1',
+                    path: 'physics/lecture1',
                     name: 'Lecture 1'
                 },
                 {
                     pk: 2,
-                    slug: 'lecture2',
+                    path: 'physics/lecture2',
                     name: 'Lecture 2'
                 },
                 {
                     pk: 3,
-                    slug: 'lecture3',
+                    path: 'physics/lecture3',
                     name: 'Lecture 3'
                 }
             ]
