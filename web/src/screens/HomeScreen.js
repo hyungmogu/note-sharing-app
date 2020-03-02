@@ -1,30 +1,13 @@
 import React, { Component } from 'react';
 
+import { AppConsumer } from '../components/Context';
 import NoteImageObject from '../components/NoteImageObject';
 
 class HomeScreen extends Component {
 
-    state = {
-        items: [
-            {
-                pk: 1,
-                name: 'Page 1',
-                url: 'https://via.placeholder.com/200'
-            },
-            {
-                pk: 2,
-                name: 'Page 2',
-                url: 'https://via.placeholder.com/200'
-            },
-            {
-                pk: 3,
-                name: 'Page 3',
-                url: 'https://via.placeholder.com/200'
-            }
-        ]
-    }
-
     render() {
+        let recentItems = this.props.appContext.recentItems;
+
         return (
             <section
             className="section--screen section--screen-home"
@@ -32,7 +15,7 @@ class HomeScreen extends Component {
                 <main className="main">
                     <h3>Recently Added Notes</h3>
                     <section className="items">
-                        {this.state.items.map(({pk, ...props}) =>
+                        {recentItems.map(({pk, ...props}) =>
                             <NoteImageObject key={pk} {...props}/>
                         )}
                     </section>
@@ -42,4 +25,15 @@ class HomeScreen extends Component {
     }
 }
 
-export default HomeScreen;
+export default React.forwardRef((props, ref) => (
+    <AppConsumer>
+        { appContext =>
+            <HomeScreen
+                {...props}
+                appContext={appContext}
+                ref={ref}
+            />
+        }
+    </AppConsumer>
+));
+

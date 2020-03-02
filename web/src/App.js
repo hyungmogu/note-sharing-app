@@ -28,6 +28,23 @@ class App extends Component {
             email: null,
             authToken: null
         },
+        recentItems: [
+            {
+                pk: 1,
+                name: 'Page 1',
+                url: 'https://via.placeholder.com/200'
+            },
+            {
+                pk: 2,
+                name: 'Page 2',
+                url: 'https://via.placeholder.com/200'
+            },
+            {
+                pk: 3,
+                name: 'Page 3',
+                url: 'https://via.placeholder.com/200'
+            }
+        ],
         notes: {
             slug: null,
             imported: false,
