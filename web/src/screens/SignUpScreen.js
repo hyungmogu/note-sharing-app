@@ -17,8 +17,8 @@ class SignUpScreen extends Component {
                     <input type="email" placeholder="Email"/>
                     <input type="password" placeholder="Password"/>
                     <input type="password" placeholder="Password Confirm"/>
-                    <button className="button button--type-primary" type="submit">Login</button>
-                    <NavLink exact to="/login" className="button button--type-secondary">Back</NavLink>
+                    <button className="button button--primary" type="submit">Login</button>
+                    <NavLink exact to="/login" className="button button--secondary">Back</NavLink>
                 </form>
             </section>
         );

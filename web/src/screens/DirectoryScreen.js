@@ -18,12 +18,10 @@ class DirectoryScreen extends Component {
         let pages = this.props.appContext.pages.items;
 
         return (
-            <section
-            className="screen"
-            >
+            <section className="screen">
                 <SecondaryHeader/>
                 <main className="main">
-                    <section class="items ">
+                    <section class="items">
                         {isNote ? folders.map((props) => {
                             return <NoteFolderObject key={props.pk} note={noteSlug} {...props}/>
                         }) :

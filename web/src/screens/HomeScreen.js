@@ -9,9 +9,7 @@ class HomeScreen extends Component {
         let recentItems = this.props.appContext.recentItems;
 
         return (
-            <section
-            className="screen screen--home"
-            >
+            <section className="screen screen--home">
                 <main className="main">
                     <h3>Recently Added Notes</h3>
                     <section className="items">

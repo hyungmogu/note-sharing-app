@@ -42,7 +42,7 @@ class PrimaryHeaderMobile extends Component {
             </section>
             <nav ref={this.navRef} className="primaryHeaderMobile--navigation">
                 <section>
-                    <button className="button button--type-add">
+                    <button className="button button--add">
                         <FontAwesomeIcon icon={faPlus}/>
                     </button>
                 </section>

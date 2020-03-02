@@ -12,9 +12,7 @@ class LoginScreen extends Component {
 
     render() {
         return (
-            <section
-            className="screen screen--loginSignup"
-            >
+            <section className="screen screen--loginSignup">
                 <form
                     className="form--type-loginSignup"
                     onSubmit={this.handleSubmit}
@@ -22,8 +20,8 @@ class LoginScreen extends Component {
                     <h3>Note Sharing Application</h3>
                     <input type="email" placeholder="Email"/>
                     <input type="password" placeholder="Password"/>
-                    <button className="button button--type-primary" type="submit">Login</button>
-                    <NavLink to="/signup" className="button button--type-secondary">Sign up</NavLink>
+                    <button className="button button--primary" type="submit">Login</button>
+                    <NavLink to="/signup" className="button button--secondary">Sign up</NavLink>
                 </form>
             </section>
         );

@@ -36,7 +36,7 @@ class PrimaryHeader extends Component {
         <header className="primaryHeader">
             <nav>
                 <section>
-                    <button className="button button--type-add">
+                    <button className="button button--add">
                         <FontAwesomeIcon icon={faPlus}/>
                     </button>
                 </section>

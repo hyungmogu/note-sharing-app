@@ -56,7 +56,7 @@ input {
   transition: all .5s ease-out;
   cursor: pointer;
 
-  &.button--type-primary {
+  &.button--primary {
     background-color: $color-primary;
     color: $color-white;
 
@@ -67,7 +67,7 @@ input {
 
   }
 
-  &.button--type-secondary {
+  &.button--secondary {
     color: $color-primary;
 
     &:hover {
@@ -75,7 +75,7 @@ input {
     }
   }
 
-  &.button--type-add {
+  &.button--add {
     padding: 20px;
     text-align: right;
     width: 100%;
@@ -121,7 +121,7 @@ input {
     }
   }
 
-  &.button--type-user {
+  &.button--user {
     font-size: 40px;
     padding: $container-spacing;
 
@@ -134,9 +134,9 @@ input {
     }
   }
 
-  &.button--type-addUser,
-  &.button--type-uploadFile,
-  &.button--type-downloadFile {
+  &.button--addUser,
+  &.button--uploadFile,
+  &.button--downloadFile {
     padding: $container-spacing;
     display: flex;
     align-items: center;
@@ -552,7 +552,7 @@ input {
     align-items: center;
   }
 
-  .button--type-user {
+  .button--user {
     display: none;
   }
 }
@@ -565,7 +565,7 @@ input {
       display: initial;
     }
 
-    .button--type-user {
+    .button--user {
       display: initial;
     }
   }

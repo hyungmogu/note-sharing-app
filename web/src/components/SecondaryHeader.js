@@ -14,25 +14,25 @@ class SecondaryHeader extends Component {
                 </h3>
                 <ul>
                     <li>
-                        <button className="button button--type-uploadFile">
+                        <button className="button button--uploadFile">
                             <FontAwesomeIcon icon={faCloudDownloadAlt}/>
                             Download File
                         </button>
                     </li>
                     <li>
-                        <button className="button button--type-uploadFile">
+                        <button className="button button--uploadFile">
                             <FontAwesomeIcon icon={faCloudUploadAlt}/>
                             Upload File
                         </button>
                     </li>
                     <li>
-                        <button className="button button--type-addUser">
+                        <button className="button button--addUser">
                             <FontAwesomeIcon icon={faUserPlus}/>
                             Add User
                         </button>
                     </li>
                     <li>
-                        <button className="button button--type-user">
+                        <button className="button button--user">
                             <FontAwesomeIcon icon={faUserCircle}/>
                         </button>
                     </li>
