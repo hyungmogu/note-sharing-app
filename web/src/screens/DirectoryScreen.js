@@ -19,7 +19,7 @@ class DirectoryScreen extends Component {
 
         return (
             <section
-            className="section--screen section--screen-directory"
+            className="section--screen"
             >
                 <SecondaryHeader/>
                 <main className="main">
