@@ -32,16 +32,19 @@ class App extends Component {
             {
                 pk: 1,
                 name: 'Page 1',
+                path: 'physics/lecture1/page1',
                 image: 'https://via.placeholder.com/200'
             },
             {
                 pk: 2,
                 name: 'Page 2',
+                path: 'physics/lecture1/page2',
                 image: 'https://via.placeholder.com/200'
             },
             {
                 pk: 3,
                 name: 'Page 3',
+                path: 'physics/lecture1/page3',
                 image: 'https://via.placeholder.com/200'
             }
         ],
