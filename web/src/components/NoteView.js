@@ -5,15 +5,19 @@ import { AppConsumer } from '../components/Context';
 class NoteView extends Component {
 
     handlePrev = () => {
-        let targetIndex = this.props.appContext.pages.items.findIndex(item => {
+        let currentIndex = this.props.appContext.pages.items.findIndex(item => {
             return item.path === this.props.path
         });
 
-
+        this.props.appContext.actions.updateView(currentIndex + 1);
     }
 
     handleNext = () => {
+       let currentIndex = this.props.appContext.pages.items.findIndex(item => {
+            return item.path === this.props.path
+        });
 
+        this.props.appContext.actions.updateView(currentIndex - 1);
     }
 
     render() {
