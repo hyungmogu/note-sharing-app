@@ -37,7 +37,7 @@ class PrimaryHeaderMobile extends Component {
                     <FontAwesomeIcon icon={faBars}/>
                 </button>
                 <section className="primaryHeaderMobile--title">
-                    <NavLink onClick={this.handleCloseMenu} exact to="/home"><strong>Note Sharing Application</strong></NavLink>
+                    <NavLink  exact to="/home"><strong>Note Sharing Application</strong></NavLink>
                 </section>
             </section>
             <nav ref={this.navRef} className="primaryHeaderMobile--navigation">

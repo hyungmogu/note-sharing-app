@@ -36,13 +36,48 @@ class App extends Component {
         folders: {
             slug: null,
             imported: false,
-            items: []
+            items: [
+                {
+                    pk: 1,
+                    slug: 'lecture1',
+                    name: 'Lecture 1'
+                },
+                {
+                    pk: 2,
+                    slug: 'lecture2',
+                    name: 'Lecture 2'
+                },
+                {
+                    pk: 3,
+                    slug: 'lecture3',
+                    name: 'Lecture 3'
+                }
+            ]
         },
         pages: {
             slug: null,
             imported: false,
             currentIndex: null,
-            items: []
+            items: [
+                {
+                    pk: 1,
+                    name: 'Page 1',
+                    slug: 'page1',
+                    url: 'https://via.placeholder.com/200'
+                },
+                {
+                    pk: 2,
+                    name: 'Page 2',
+                    slug: 'page2',
+                    url: 'https://via.placeholder.com/200'
+                },
+                {
+                    pk: 3,
+                    name: 'Page 3',
+                    slug: 'page3',
+                    url: 'https://via.placeholder.com/200'
+                }
+            ]
         }
     }
 
