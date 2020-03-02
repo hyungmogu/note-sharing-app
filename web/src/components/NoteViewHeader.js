@@ -6,41 +6,6 @@ import NoteImageObject from '../components/NoteImageObject';
 
 class NoteViewHeader extends Component {
 
-    state = {
-        items: [
-            {
-                pk: 1,
-                name: 'Page 1',
-                slug: 'page1',
-                url: 'https://via.placeholder.com/200'
-            },
-            {
-                pk: 2,
-                name: 'Page 2',
-                slug: 'page2',
-                url: 'https://via.placeholder.com/200'
-            },
-            {
-                pk: 3,
-                name: 'Page 3',
-                slug: 'page3',
-                url: 'https://via.placeholder.com/200'
-            },
-            {
-                pk: 4,
-                name: 'Page 4',
-                slug: 'page2',
-                url: 'https://via.placeholder.com/200'
-            },
-            {
-                pk: 5,
-                name: 'Page 5',
-                slug: 'page3',
-                url: 'https://via.placeholder.com/200'
-            }
-        ]
-    }
-
     render() {
         const {location} = this.props;
 
