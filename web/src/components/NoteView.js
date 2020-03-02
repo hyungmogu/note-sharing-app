@@ -1,6 +1,20 @@
 import React, { Component } from 'react';
 
+import { AppConsumer } from '../components/Context';
+
 class NoteView extends Component {
+
+    handlePrev = () => {
+        let targetIndex = this.props.appContext.pages.items.findIndex(item => {
+            return item.path === this.props.path
+        });
+
+
+    }
+
+    handleNext = () => {
+
+    }
 
     render() {
         return (
@@ -9,13 +23,25 @@ class NoteView extends Component {
             >
                 <img src="https://via.placeholder.com/750x1000"/>
                 <section class="navigation">
-                    <button>&lt; Back</button>
+                    <button onClick={this.handlePrev}>&lt; Back</button>
                     <span>Page 1</span>
-                    <button>Next &gt;</button>
+                    <button onClick={this.handleNext}>Next &gt;</button>
                 </section>
             </section>
         );
     }
 }
 
-export default NoteView;
+export default React.forwardRef((props, ref) => (
+    <AppConsumer>
+        { appContext =>
+            <NoteView
+                {...props}
+                appContext={appContext}
+                ref={ref}
+            />
+        }
+    </AppConsumer>
+));
+
+

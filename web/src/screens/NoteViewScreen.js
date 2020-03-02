@@ -14,7 +14,7 @@ class NoteViewScreen extends Component {
                 <SecondaryHeader/>
                 <main className="main">
                     <section>
-                        <NoteView/>
+                        <NoteView {...this.props}/>
                     </section>
                 </main>
             </section>
