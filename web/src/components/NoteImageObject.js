@@ -7,7 +7,7 @@ class NoteImageObject extends Component {
     render() {
         return (
             <NavLink to={`/notes/${this.props.note}/${this.props.folder}/${this.props.slug}`} className="noteImage">
-                <img src={this.props.url}/>
+                <img src={this.props.image}/>
                 <section>
                     <span>{this.props.name}</span>
                 </section>
