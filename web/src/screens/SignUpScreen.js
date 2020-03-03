@@ -11,7 +11,7 @@ class SignUpScreen extends Component {
             <section
             className="screen screen--loginSignup"
             >
-                <form className="form--type-loginSignup">
+                <form className="form--loginSignup">
                     <h3>Note Sharing Application</h3>
                     <input type="text" placeholder="Name"/>
                     <input type="email" placeholder="Email"/>

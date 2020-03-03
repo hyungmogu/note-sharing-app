@@ -14,7 +14,7 @@ class LoginScreen extends Component {
         return (
             <section className="screen screen--loginSignup">
                 <form
-                    className="form--type-loginSignup"
+                    className="form--loginSignup"
                     onSubmit={this.handleSubmit}
                 >
                     <h3>Note Sharing Application</h3>

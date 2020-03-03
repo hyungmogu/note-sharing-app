@@ -156,7 +156,7 @@ input {
   }
 }
 
-.form--type-loginSignup {
+.form--loginSignup {
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -179,7 +179,7 @@ input {
 }
 
 @media screen and (min-width: 930px) {
-  .form--type-loginSignup {
+  .form--loginSignup {
     margin-left: 15%;
   }
 }
