@@ -55,9 +55,9 @@ class App extends Component {
         },
         folders: {
             info: {
-                slug: null,
-                name: null,
-                path: null
+                slug: 'physics',
+                name: 'Physics',
+                path: 'physics/'
             },
             items: [
                 {
@@ -79,9 +79,9 @@ class App extends Component {
         },
         pages: {
             info: {
-                slug: null,
-                name: null,
-                path: null
+                slug: 'lecture1',
+                name: 'Lecture 1',
+                path: 'physics/lecture1/'
             },
             currentIndex: null,
             items: [

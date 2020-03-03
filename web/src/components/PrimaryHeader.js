@@ -8,6 +8,18 @@ import { faPlus, faCheck, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 class PrimaryHeader extends Component {
 
+    state = {
+        addNew: false
+    };
+
+    handleAddNewTopic = () => {
+        this.setState( prev => {
+            return {
+                addNew: !prev.addNew
+            }
+        });
+    }
+
     render() {
         const {location} = this.props;
 
@@ -36,7 +48,7 @@ class PrimaryHeader extends Component {
         <header className="primaryHeader">
             <nav>
                 <section>
-                    <button className="button button--add">
+                    <button onClick={this.handleAddNewTopic} className="button button--add">
                         <FontAwesomeIcon icon={faPlus}/>
                     </button>
                 </section>
@@ -46,17 +58,22 @@ class PrimaryHeader extends Component {
                         <li><NavLink to="/notes/social_studies">Social Studies</NavLink></li>
                         <li><NavLink to="/notes/biology">Biology</NavLink></li>
                         <li><NavLink to="/notes/english">English</NavLink></li>
-                        <li>
-                            <form className="form--header">
-                                <input type="text" placeholder="Name"/>
-                                <button className="button button--check" type="submit">
-                                    <FontAwesomeIcon icon={faCheck}/>
-                                </button>
-                                <button className="button button--cancel">
-                                    <FontAwesomeIcon icon={faTrashAlt}/>
-                                </button>
-                            </form>
-                        </li>
+                        {
+                            this.state.addNew ?
+                            <li>
+                                <form className="form--header">
+                                    <input type="text" placeholder="Name"/>
+                                    <button className="button button--check" type="submit">
+                                        <FontAwesomeIcon icon={faCheck}/>
+                                    </button>
+                                    <button className="button button--cancel">
+                                        <FontAwesomeIcon icon={faTrashAlt}/>
+                                    </button>
+                                </form>
+                            </li>
+
+                            : ''
+                        }
                     </ul>
                 </section>
             </nav>
