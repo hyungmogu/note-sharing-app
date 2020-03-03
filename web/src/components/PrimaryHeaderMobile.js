@@ -8,6 +8,18 @@ class PrimaryHeaderMobile extends Component {
 
     navRef = React.createRef();
 
+    state = {
+        addNew: false
+    };
+
+    handleAddNewTopic = () => {
+        this.setState( prev => {
+            return {
+                addNew: !prev.addNew
+            }
+        });
+    }
+
     handleMobileMenuClick = () => {
         if (this.navRef.current.classList.contains('open')) {
             this.navRef.current.classList.remove('open');
@@ -42,7 +54,7 @@ class PrimaryHeaderMobile extends Component {
             </section>
             <nav ref={this.navRef} className="primaryHeaderMobile--navigation">
                 <section>
-                    <button className="button button--add">
+                    <button onClick={this.handleAddNewTopic} className="button button--add">
                         <FontAwesomeIcon icon={faPlus}/>
                     </button>
                 </section>
@@ -51,17 +63,22 @@ class PrimaryHeaderMobile extends Component {
                     <li><NavLink onClick={this.handleCloseMenu} to="/notes/social_studies">Social Studies</NavLink></li>
                     <li><NavLink onClick={this.handleCloseMenu} to="/notes/biology">Biology</NavLink></li>
                     <li><NavLink onClick={this.handleCloseMenu} to="/notes/english">English</NavLink></li>
-                    <li>
-                        <form className="form--header">
-                            <input type="text" placeholder="Name"/>
-                            <button className="button button--check" type="submit">
-                                <FontAwesomeIcon icon={faCheck}/>
-                            </button>
-                            <button className="button button--cancel">
-                                <FontAwesomeIcon icon={faTrashAlt}/>
-                            </button>
-                        </form>
-                    </li>
+                    {
+                        this.state.addNew ?
+                        <li>
+                            <form className="form--header">
+                                <input type="text" placeholder="Name"/>
+                                <button className="button button--check" type="submit">
+                                    <FontAwesomeIcon icon={faCheck}/>
+                                </button>
+                                <button className="button button--cancel">
+                                    <FontAwesomeIcon icon={faTrashAlt}/>
+                                </button>
+                            </form>
+                        </li>
+
+                        : ''
+                    }
                 </ul>
             </nav>
         </header>
