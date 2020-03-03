@@ -9,7 +9,7 @@ class NoteFolderObject extends Component {
     render() {
         return (
             <NavLink to={`/notes/${this.props.path}`} className="noteFolder">
-                <section class="icon">
+                <section className="icon">
                     <FontAwesomeIcon icon={faFolderOpen}/>
                 </section>
                 <section>

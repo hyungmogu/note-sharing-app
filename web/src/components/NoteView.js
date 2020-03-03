@@ -26,7 +26,7 @@ class NoteView extends Component {
             className="noteView"
             >
                 <img src="https://via.placeholder.com/750x1000"/>
-                <section class="navigation">
+                <section className="navigation">
                     <button onClick={this.handlePrev}>&lt; Back</button>
                     <span>Page 1</span>
                     <button onClick={this.handleNext}>Next &gt;</button>

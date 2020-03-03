@@ -21,7 +21,7 @@ class DirectoryScreen extends Component {
             <section className="screen">
                 <SecondaryHeader/>
                 <main className="main">
-                    <section class="items">
+                    <section className="items">
                         {isNote ? folders.map((props) => {
                             return <NoteFolderObject key={props.pk} note={noteSlug} {...props}/>
                         }) :
