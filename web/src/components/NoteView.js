@@ -22,9 +22,7 @@ class NoteView extends Component {
 
     render() {
         return (
-            <section
-            className="noteView"
-            >
+            <section className="noteView">
                 <img src="https://via.placeholder.com/750x1000"/>
                 <section className="navigation">
                     <button onClick={this.handlePrev}>&lt; Back</button>
