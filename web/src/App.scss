@@ -601,12 +601,19 @@ input {
   position: relative;
   display: none;
 
+  &:hover {
+    .userMenu--navigation {
+      display: initial;
+    }
+  }
+
   .userMenu--navigation {
     border: 1px solid black;
     border-radius: 5px;
     width: 100px;
     right: 18px;
     position: absolute;
+    display: none;
 
   }
 
