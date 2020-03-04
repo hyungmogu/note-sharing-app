@@ -12,7 +12,7 @@ class UserMenu extends Component {
                     <button className="button button--user">
                         <FontAwesomeIcon icon={faUserCircle}/>
                     </button>
-                    <nav>
+                    <nav className="userMenu--navigation">
                         <ul>
                             <li>Logout</li>
                         </ul>
