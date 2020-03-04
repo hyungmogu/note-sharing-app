@@ -9,7 +9,7 @@ class NotFoundScreen extends Component {
     render() {
         return(
             <section className="screen screen--notFound">
-                <FontAwesomeIcon className="icon" icon={faBolt}/>
+                <FontAwesomeIcon className="screenIcon" icon={faBolt}/>
                 <h2 className="title">Page is Not Found</h2>
             </section>
         );
