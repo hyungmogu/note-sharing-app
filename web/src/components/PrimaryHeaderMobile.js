@@ -37,6 +37,7 @@ class PrimaryHeaderMobile extends Component {
         const {location} = this.props;
 
         if (location.pathname.match(/\/login/) ||
+            location.pathname.match(/\/logout/) ||
             location.pathname.match(/\/signup/)
         ) {
             return null;
