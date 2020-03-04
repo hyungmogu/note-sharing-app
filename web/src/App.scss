@@ -586,6 +586,12 @@ input {
     align-items: center;
     justify-content: center;
   }
+
+  &.screen--notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 930px) {
