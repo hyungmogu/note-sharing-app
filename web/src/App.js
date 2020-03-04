@@ -18,6 +18,7 @@ import DirectoryScreen from './screens/DirectoryScreen';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
+import NotFoundScreen from './screens/NotFoundScreen';
 import './App.scss';
 
 class App extends Component {
@@ -134,6 +135,7 @@ class App extends Component {
                             <PrivateRoute path="/notes/:note/:folder/:page" component={NoteViewScreen}/>
                             <PrivateRoute path="/notes/:note/:folder" component={DirectoryScreen}/>
                             <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
+                            <Route component={NotFoundScreen}/>
                         </Switch>
                     </div>
                 </BrowserRouter>
