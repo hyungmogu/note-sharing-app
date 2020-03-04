@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,7 +15,7 @@ class UserMenu extends Component {
                     </button>
                     <nav className="userMenu--navigation">
                         <ul>
-                            <li>Logout</li>
+                            <li><NavLink to="/logout">Logout</NavLink></li>
                         </ul>
                     </nav>
                 </section>
