@@ -599,6 +599,7 @@ input {
 
 .userMenu {
   position: relative;
+  display: none;
 
   .userMenu--navigation {
     border: 1px solid black;
@@ -629,5 +630,12 @@ input {
 
   .userMenu--link:hover {
     color: $color-primary;
+  }
+}
+
+
+@media screen and (min-width: 930px) {
+  .userMenu {
+    display: initial;
   }
 }
