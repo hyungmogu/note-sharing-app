@@ -20,7 +20,7 @@ class PrimaryHeaderMobile extends Component {
         });
     }
 
-    handleMobileMenuClick = () => {
+    handleToggleMobileMenu = () => {
         if (this.navRef.current.classList.contains('open')) {
             this.navRef.current.classList.remove('open');
             return;
@@ -45,7 +45,7 @@ class PrimaryHeaderMobile extends Component {
         return (
         <header className="primaryHeaderMobile">
             <section className="primaryHeaderMobile--header">
-                <button className="button button--menu" onClick={this.handleMobileMenuClick}>
+                <button className="button button--menu" onClick={this.handleToggleMobileMenu}>
                     <FontAwesomeIcon icon={faBars}/>
                 </button>
                 <section className="primaryHeaderMobile--title">
