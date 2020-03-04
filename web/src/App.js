@@ -19,6 +19,7 @@ import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import NotFoundScreen from './screens/NotFoundScreen';
+import LogOutScreen from './screens/LogOutScreen';
 import './App.scss';
 
 class App extends Component {
@@ -132,6 +133,7 @@ class App extends Component {
                             <Route path="/login" component={LoginScreen}/>
                             <Route path="/signup" component={SignUpScreen}/>
                             <PrivateRoute path="/home" component={HomeScreen}/>
+                            <PrivateRoute path="/logout" component={LogOutScreen}/>
                             <PrivateRoute path="/notes/:note/:folder/:page" component={NoteViewScreen}/>
                             <PrivateRoute path="/notes/:note/:folder" component={DirectoryScreen}/>
                             <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
