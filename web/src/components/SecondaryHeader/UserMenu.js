@@ -15,7 +15,14 @@ class UserMenu extends Component {
                     </button>
                     <nav className="userMenu--navigation">
                         <ul>
-                            <li><NavLink to="/logout">Logout</NavLink></li>
+                            <li className="userMenu--item">
+                                <NavLink
+                                    to="/logout"
+                                    className="userMenu--link"
+                                >
+                                    Logout
+                                </NavLink>
+                            </li>
                         </ul>
                     </nav>
                 </section>

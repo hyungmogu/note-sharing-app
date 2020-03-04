@@ -597,4 +597,37 @@ input {
   }
 }
 
+.userMenu {
+  position: relative;
 
+  .userMenu--navigation {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    right: 18px;
+    position: absolute;
+
+  }
+
+  .userMenu--item {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: calc(#{$container-spacing}/3.5);
+    text-decoration: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .userMenu--link {
+    display: block;
+    text-decoration: none;
+    color: $color-black;
+    transition: all .5s ease-out;
+  }
+
+  .userMenu--link:hover {
+    color: $color-primary;
+  }
+}
