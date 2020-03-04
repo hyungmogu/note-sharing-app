@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserPlus, faUserCircle, faCloudUploadAlt, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -35,6 +34,11 @@ class SecondaryHeader extends Component {
                         <button className="button button--user">
                             <FontAwesomeIcon icon={faUserCircle}/>
                         </button>
+                        <nav>
+                            <ul>
+                                <li>Logout</li>
+                            </ul>
+                        </nav>
                     </li>
                 </ul>
             </header>
