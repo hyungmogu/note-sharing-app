@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserPlus, faUserCircle, faCloudUploadAlt, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
+import { faUserPlus, faCloudUploadAlt, faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons'
+
+import UserMenu from './UserMenu';
 
 class SecondaryHeader extends Component {
 
@@ -31,14 +33,7 @@ class SecondaryHeader extends Component {
                         </button>
                     </li>
                     <li>
-                        <button className="button button--user">
-                            <FontAwesomeIcon icon={faUserCircle}/>
-                        </button>
-                        <nav>
-                            <ul>
-                                <li>Logout</li>
-                            </ul>
-                        </nav>
+                        <UserMenu/>
                     </li>
                 </ul>
             </header>
