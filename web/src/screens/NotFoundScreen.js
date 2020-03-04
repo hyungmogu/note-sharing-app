@@ -6,7 +6,9 @@ class NotFoundScreen extends Component {
 
     render() {
         return(
-            <div></div>
+            <div className="screen--notFound">
+
+            </div>
         );
     }
 }
