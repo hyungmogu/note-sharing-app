@@ -8,12 +8,18 @@ class NoteView extends Component {
         currentIndex: 0
     }
 
+    componentDidMount () {
+        this.setState({
+            currentIndex: 0
+        })
+    }
+
     handlePrev = () => {
         let currentIndex = this.props.appContext.pages.items.findIndex(item => {
             return item.path === this.props.path
         });
 
-        this.props.appContext.actions.updateView(currentIndex + 1);
+        // this.props.appContext.actions.updateView(currentIndex + 1);
     }
 
     handleNext = () => {
@@ -21,7 +27,7 @@ class NoteView extends Component {
             return item.path === this.props.path
         });
 
-        this.props.appContext.actions.updateView(currentIndex - 1);
+        // this.props.appContext.actions.updateView(currentIndex - 1);
     }
 
     render() {
