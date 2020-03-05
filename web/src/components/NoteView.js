@@ -23,6 +23,11 @@ class NoteView extends Component {
     }
 
     handleNext = () => {
+        this.setState(prevState => {
+            return {
+                currentIndex: prevState.currentIndex + 1
+            }
+        })
     }
 
     render() {
