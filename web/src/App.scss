@@ -391,6 +391,19 @@ input {
       display: none;
     }
   }
+
+  .navigation--btnWrapper,
+  .navigation--textWrapper {
+    flex: 1
+  }
+
+  .navigation--btnWrapper:first-child {
+    text-align: left;
+  }
+
+  .navigation--btnWrapper:last-child {
+    text-align: right;
+  }
 }
 
 @media screen and (min-width: 930px) {
