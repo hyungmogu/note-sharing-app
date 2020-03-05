@@ -4,6 +4,10 @@ import { AppConsumer } from '../components/Context';
 
 class NoteView extends Component {
 
+    state = {
+        currentIndex: 0
+    }
+
     handlePrev = () => {
         let currentIndex = this.props.appContext.pages.items.findIndex(item => {
             return item.path === this.props.path
