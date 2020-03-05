@@ -15,19 +15,14 @@ class NoteView extends Component {
     }
 
     handlePrev = () => {
-        let currentIndex = this.props.appContext.pages.items.findIndex(item => {
-            return item.path === this.props.path
-        });
-
-        // this.props.appContext.actions.updateView(currentIndex + 1);
+        this.setState(prevState => {
+            return {
+                currentIndex: prevState.currentIndex - 1
+            }
+        })
     }
 
     handleNext = () => {
-       let currentIndex = this.props.appContext.pages.items.findIndex(item => {
-            return item.path === this.props.path
-        });
-
-        // this.props.appContext.actions.updateView(currentIndex - 1);
     }
 
     render() {
