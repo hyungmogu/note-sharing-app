@@ -20,6 +20,8 @@ class NoteView extends Component {
                 currentIndex: prevState.currentIndex - 1
             }
         })
+
+        this.props.history.push('/notes/' + this.props.appContext.pages.items[this.state.currentIndex].path);
     }
 
     handleNext = () => {
@@ -27,7 +29,9 @@ class NoteView extends Component {
             return {
                 currentIndex: prevState.currentIndex + 1
             }
-        })
+        });
+
+        this.props.history.push('/notes/' + this.props.appContext.pages.items[this.state.currentIndex].path);
     }
 
     render() {
