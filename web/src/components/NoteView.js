@@ -11,20 +11,34 @@ class NoteView extends Component {
     }
 
     componentDidMount () {
+        this.handleMoveToItem();
+    }
+
+    componentDidUpdate () {
+        this.handleMoveToItem();
+    }
+
+    handleMoveToItem = () => {
         let match = matchPath(this.props.history.location.pathname, {
             path: '/notes/:note/:folder/:page/',
             exact: true,
             strict: false
         });
 
-        let currPath = `/notes/${match.params.note}/${match.params.folder}/${match.params.page}`;
+        let currPath = `${match.params.note}/${match.params.folder}/${match.params.page}`;
 
         let currentIndex = this.props.appContext.pages.items.findIndex((item, index) => {
             return item.path === currPath;
         })
 
-        this.setState({
-            currentIndex: currentIndex
+        this.setState(prevState => {
+            if (prevState.currentIndex === currentIndex) {
+                return null;
+            }
+
+            return {
+                currentIndex: currentIndex
+            }
         })
     }
 
