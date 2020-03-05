@@ -33,7 +33,9 @@ class NoteView extends Component {
                         : <button onClick={this.handlePrev}>&lt; Back</button>
                     }
                     <span>Page 1</span>
-                    <button onClick={this.handleNext}>Next &gt;</button>
+                    { this.state.currentIndex == this.props.appContext.pages.items.length - 1 ? ''
+                        : <button onClick={this.handleNext}>Next &gt;</button>
+                    }
                 </section>
             </section>
         );
