@@ -404,6 +404,10 @@ input {
   .navigation--btnWrapper:last-child {
     text-align: right;
   }
+
+  .navigation--textWrapper {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 930px) {
