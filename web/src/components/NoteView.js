@@ -43,23 +43,11 @@ class NoteView extends Component {
     }
 
     handlePrev = () => {
-        this.setState(prevState => {
-            return {
-                currentIndex: prevState.currentIndex - 1
-            }
-        })
-
-        this.props.history.push('/notes/' + this.props.appContext.pages.items[this.state.currentIndex].path);
+        this.props.history.push('/notes/' + this.props.appContext.pages.items[this.state.currentIndex - 1].path);
     }
 
     handleNext = () => {
-        this.setState(prevState => {
-            return {
-                currentIndex: prevState.currentIndex + 1
-            }
-        });
-
-        this.props.history.push('/notes/' + this.props.appContext.pages.items[this.state.currentIndex].path);
+        this.props.history.push('/notes/' + this.props.appContext.pages.items[this.state.currentIndex + 1].path);
     }
 
     render() {
