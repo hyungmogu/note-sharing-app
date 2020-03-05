@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { matchPath } from 'react-router'
+
 import { AppConsumer } from '../components/Context';
 
 class NoteView extends Component {
@@ -9,8 +11,20 @@ class NoteView extends Component {
     }
 
     componentDidMount () {
+        let match = matchPath(this.props.history.location.pathname, {
+            path: '/notes/:note/:folder/:page/',
+            exact: true,
+            strict: false
+        });
+
+        let currPath = `/notes/${match.params.note}/${match.params.folder}/${match.params.page}`;
+
+        let currentIndex = this.props.appContext.pages.items.findIndex((item, index) => {
+            return item.path === currPath;
+        })
+
         this.setState({
-            currentIndex: 0
+            currentIndex: currentIndex
         })
     }
 
