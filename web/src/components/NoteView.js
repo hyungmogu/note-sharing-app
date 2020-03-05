@@ -11,6 +11,14 @@ class NoteView extends Component {
     }
 
     componentDidMount () {
+        this.handleMoveToItem();
+    }
+
+    componentDidUpdate () {
+        this.handleMoveToItem();
+    }
+
+    handleMoveToItem = () => {
         let match = matchPath(this.props.history.location.pathname, {
             path: '/notes/:note/:folder/:page/',
             exact: true,
