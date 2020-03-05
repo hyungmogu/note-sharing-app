@@ -31,6 +31,13 @@ class NoteView extends Component {
     }
 
     render() {
+
+        let name = '';
+        try {
+            name = this.props.appContext.pages.items[this.state.currentIndex].name;
+        } catch(Error) {}
+
+
         return (
             <section className="noteView">
                 <img src="https://via.placeholder.com/750x1000"/>
@@ -41,7 +48,7 @@ class NoteView extends Component {
                         }
                     </section>
                     <section className="navigation--textWrapper">
-                        <span>Page 1</span>
+                        <span>{name}</span>
                     </section>
                     <section className="navigation--btnWrapper">
                         { this.state.currentIndex == this.props.appContext.pages.items.length - 1 ? ''
