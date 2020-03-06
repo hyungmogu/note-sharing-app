@@ -7,7 +7,9 @@ class Modal extends Component {
     render() {
         return (
             <section className="modal">
-                {this.props.children}
+                <section className="modal--wrapper">
+                    {this.props.children}
+                </section>
             </section>
         );
     }
