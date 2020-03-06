@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/note-sharing-app/static/css/main.2dedc3b4.chunk.css",
-    "main.js": "/note-sharing-app/static/js/main.1fff8029.chunk.js",
-    "main.js.map": "/note-sharing-app/static/js/main.1fff8029.chunk.js.map",
+    "main.css": "/note-sharing-app/static/css/main.d97bd67f.chunk.css",
+    "main.js": "/note-sharing-app/static/js/main.cc497643.chunk.js",
+    "main.js.map": "/note-sharing-app/static/js/main.cc497643.chunk.js.map",
     "runtime-main.js": "/note-sharing-app/static/js/runtime-main.de863928.js",
     "runtime-main.js.map": "/note-sharing-app/static/js/runtime-main.de863928.js.map",
     "static/js/2.b65e0a4d.chunk.js": "/note-sharing-app/static/js/2.b65e0a4d.chunk.js",
     "static/js/2.b65e0a4d.chunk.js.map": "/note-sharing-app/static/js/2.b65e0a4d.chunk.js.map",
     "index.html": "/note-sharing-app/index.html",
-    "precache-manifest.b0677465799d52ab5c2d7b147326ab55.js": "/note-sharing-app/precache-manifest.b0677465799d52ab5c2d7b147326ab55.js",
+    "precache-manifest.22625b32c3cf33b42e3e073da4901037.js": "/note-sharing-app/precache-manifest.22625b32c3cf33b42e3e073da4901037.js",
     "service-worker.js": "/note-sharing-app/service-worker.js",
-    "static/css/main.2dedc3b4.chunk.css.map": "/note-sharing-app/static/css/main.2dedc3b4.chunk.css.map",
+    "static/css/main.d97bd67f.chunk.css.map": "/note-sharing-app/static/css/main.d97bd67f.chunk.css.map",
     "static/js/2.b65e0a4d.chunk.js.LICENSE.txt": "/note-sharing-app/static/js/2.b65e0a4d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.de863928.js",
     "static/js/2.b65e0a4d.chunk.js",
-    "static/css/main.2dedc3b4.chunk.css",
-    "static/js/main.1fff8029.chunk.js"
+    "static/css/main.d97bd67f.chunk.css",
+    "static/js/main.cc497643.chunk.js"
   ]
 }
