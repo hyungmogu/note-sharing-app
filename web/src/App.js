@@ -13,7 +13,7 @@ import PrimaryHeader from './components/PrimaryHeader';
 import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 import PrivateRoute from './components/PrivateRoute';
 
-import Modal from './components/Modal';
+import Modal from './modals/Modal';
 
 import NoteViewScreen from './screens/NoteViewScreen';
 import DirectoryScreen from './screens/DirectoryScreen';
