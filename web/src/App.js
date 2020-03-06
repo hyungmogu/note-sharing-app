@@ -22,6 +22,8 @@ import NotFoundScreen from './screens/NotFoundScreen';
 import LogOutScreen from './screens/LogOutScreen';
 import './App.scss';
 
+import UploadFileModal from './modals/UploadFileModal';
+
 class App extends Component {
 
     state = {
@@ -139,6 +141,7 @@ class App extends Component {
                             <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
                             <Route component={NotFoundScreen}/>
                         </Switch>
+                        <UploadFileModal></UploadFileModal>
                     </div>
                 </BrowserRouter>
             </AppProvider>
