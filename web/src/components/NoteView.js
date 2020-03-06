@@ -80,6 +80,8 @@ class NoteView extends Component {
                         }
                     </section>
                 </section>
+                <section className="navigationMobile">
+                </section>
             </section>
         );
     }
