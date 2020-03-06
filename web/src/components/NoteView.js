@@ -84,10 +84,10 @@ class NoteView extends Component {
                     </section>
                 </section>
                 <section className="navigationMobile">
-                    <button onClick={this.handlePrev} className="navigationMobile--btn">
+                    <button onClick={this.handlePrev} disabled={this.state.currentIndex === 0} className="navigationMobile--btn">
                         <FontAwesomeIcon icon={faLessThan}/>
                     </button>
-                    <button onClick={this.handleNext} className="navigationMobile--btn">
+                    <button onClick={this.handleNext} disabled={this.state.currentIndex === this.props.appContext.pages.items.length - 1} className="navigationMobile--btn">
                         <FontAwesomeIcon icon={faGreaterThan}/>
                     </button>
                 </section>
