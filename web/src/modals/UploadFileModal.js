@@ -10,8 +10,8 @@ class UploadFileModal extends Component {
     render() {
         return (
             <Modal ref={this.modalRef}>
-                <section>
-                    <button>Close</button>
+                <section className="uploadFileModal">
+                    <button className="button button--primary">Close</button>
                 </section>
             </Modal>
         );
