@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
-import { NavLink, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class Modal extends Component {
 
     render() {
-        return;
+        return (
+            <section className="modal">
+                {this.props.children}
+            </section>
+        );
     }
 };
 
