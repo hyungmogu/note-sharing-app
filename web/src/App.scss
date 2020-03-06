@@ -273,6 +273,9 @@ input {
     background-color: white;
   }
 
+  &.closed {
+    display: none;
+  }
 }
 
 .noteFolder {
