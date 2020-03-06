@@ -11,6 +11,8 @@ class UploadFileModal extends Component {
         return (
             <Modal ref={this.modalRef}>
                 <section className="uploadFileModal">
+                    <section className="uploadFileModal--dragDropArea">
+                    </section>
                     <button className="button button--primary">Close</button>
                 </section>
             </Modal>
