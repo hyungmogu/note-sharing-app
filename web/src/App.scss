@@ -452,6 +452,12 @@ input {
   }
 }
 
+@media screen and (min-width: 930px) {
+  .navigationMobile {
+    display: none;
+  }
+}
+
 .noteViewHeader {
   background-color: $color-primary;
   width: $header-width;
