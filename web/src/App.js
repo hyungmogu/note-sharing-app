@@ -13,8 +13,6 @@ import PrimaryHeader from './components/PrimaryHeader';
 import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 import PrivateRoute from './components/PrivateRoute';
 
-import Modal from './modals/Modal';
-
 import NoteViewScreen from './screens/NoteViewScreen';
 import DirectoryScreen from './screens/DirectoryScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -141,7 +139,6 @@ class App extends Component {
                             <PrivateRoute path="/notes/:note" component={DirectoryScreen}/>
                             <Route component={NotFoundScreen}/>
                         </Switch>
-                        <Modal></Modal>
                     </div>
                 </BrowserRouter>
             </AppProvider>
