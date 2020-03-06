@@ -273,6 +273,7 @@ input {
     max-height: 450px;
     border-radius: 5px;
     background-color: white;
+    padding: $container-spacing;
   }
 
   &.closed {

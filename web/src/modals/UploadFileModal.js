@@ -10,7 +10,9 @@ class UploadFileModal extends Component {
     render() {
         return (
             <Modal ref={this.modalRef}>
-                <div>hello world</div>
+                <section>
+                    <button>Close</button>
+                </section>
             </Modal>
         );
     }
