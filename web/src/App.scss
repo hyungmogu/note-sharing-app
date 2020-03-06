@@ -463,10 +463,17 @@ input {
   justify-content: space-between;
 
   .navigationMobile--btn {
-    color: white;
+
     padding: 0;
-    background-color: rgba(0,0,0,0.3);
+    color: transparent;
+    background-color: transparent;
+    transition: all .5s ease-out;
     width: calc(#{$container-spacing} * 4);
+  }
+
+  .navigationMobile--btn:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.3);
   }
 }
 
