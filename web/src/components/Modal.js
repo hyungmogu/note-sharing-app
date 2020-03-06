@@ -5,8 +5,14 @@ import { withRouter } from 'react-router-dom';
 class Modal extends Component {
     modalRef = React.createRef();
 
+    openModal = (e) => {
+        if (this.modalRef.current.classList.contains('closed')) {
+            this.modalRef.current.classList.remove('closed');
+        }
+    }
+
     closeModal = (e) => {
-        if (!this.modalRef.current.classList.contains('open')) {
+        if (!this.modalRef.current.classList.contains('closed')) {
             this.modalRef.current.classList.add('closed');
         }
     }
