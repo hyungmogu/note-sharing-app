@@ -463,6 +463,7 @@ input {
   justify-content: space-between;
 
   .navigationMobile--btn {
+    color: white;
     padding: 0;
     background-color: rgba(0,0,0,0.3);
     width: calc(#{$container-spacing} * 4);

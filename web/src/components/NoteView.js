@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 import { matchPath } from 'react-router'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLessThan, faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 
 import { AppConsumer } from '../components/Context';
+
 
 class NoteView extends Component {
 
@@ -81,8 +84,12 @@ class NoteView extends Component {
                     </section>
                 </section>
                 <section className="navigationMobile">
-                    <button className="navigationMobile--btn">&lt;</button>
-                    <button className="navigationMobile--btn">&gt;</button>
+                    <button className="navigationMobile--btn">
+                        <FontAwesomeIcon icon={faLessThan}/>
+                    </button>
+                    <button className="navigationMobile--btn">
+                        <FontAwesomeIcon icon={faGreaterThan}/>
+                    </button>
                 </section>
             </section>
         );
