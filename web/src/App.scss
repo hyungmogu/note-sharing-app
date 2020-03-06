@@ -754,9 +754,17 @@ input {
   }
 
   .uploadFileModal--dragDropArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px dashed $color-primary;
     border-radius: 5px;
     flex: 1;
     margin-bottom: calc(#{$container-spacing} * 2);
+  }
+
+  .screenIcon {
+    font-size: 7em;
   }
 }

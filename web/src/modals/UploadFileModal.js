@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import { withRouter } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileUpload } from '@fortawesome/free-solid-svg-icons';
 
 import Modal from './Modal';
 
@@ -12,6 +14,8 @@ class UploadFileModal extends Component {
             <Modal ref={this.modalRef}>
                 <section className="uploadFileModal">
                     <section className="uploadFileModal--dragDropArea">
+                        <FontAwesomeIcon className="screenIcon" icon={faFileUpload}/>
+                        <h4>Drag and drop image files here</h4>
                     </section>
                     <button className="button button--primary">Close</button>
                 </section>
