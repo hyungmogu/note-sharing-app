@@ -593,6 +593,7 @@ input {
     width: 100%;
     background-color: $color-primary;
     display: none;
+    z-index: 1;
   }
 
   button {
