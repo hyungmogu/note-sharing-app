@@ -9,6 +9,16 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 class AddUserModal extends Component {
     modalRef = React.createRef();
 
+    state = {
+        users: [
+            {
+                pk: 1,
+                name: 'John Doe',
+                email: 'johnDoe@gmail.com'
+            }
+        ]
+    }
+
     handleOpenModal = (e) => {
         this.modalRef.current.handleOpenModal(e);
     }
@@ -22,10 +32,12 @@ class AddUserModal extends Component {
             <Modal ref={this.modalRef}>
                 <section className="addUserModal">
                     <section className="addUserModal--wrapper-userList">
-                        <section className="addUserModal--item">
-                            <span className="addUserModal--name">Name goes here</span>
-                            <FontAwesomeIcon icon={faTimes}/>
-                        </section>
+                        { this.state.users.map((item, index) =>
+                            <section className="addUserModal--item">
+                                <span className="addUserModal--name"><strong>{index+1}.</strong> {item.name}</span>
+                                <FontAwesomeIcon icon={faTimes}/>
+                            </section>
+                        )}
                     </section>
                     <section className="addUserModal--wrapper-input">
                         <input className="addUserModal--input" type="email" placeholder="Email"/>
