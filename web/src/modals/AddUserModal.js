@@ -18,6 +18,10 @@ class AddUserModal extends Component {
         return (
             <Modal ref={this.modalRef}>
                 <section className="addUserModal">
+                    <section>
+                        <input type="email" placeholder="Email"/>
+                        <button className="button button--primary">Add</button>
+                    </section>
                     <button onClick={e => this.handleCloseModal(e)} className="button button--primary">Close</button>
                 </section>
             </Modal>
