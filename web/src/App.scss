@@ -58,6 +58,10 @@ input {
   .addUserModal--wrapper-input {
     margin-bottom: calc(#{$container-spacing} * 0.5);
   }
+
+  .addUserModal--input {
+    margin-right: calc(#{$container-spacing} * 0.5);
+  }
 }
 
 .button {
