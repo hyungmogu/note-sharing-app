@@ -8,17 +8,26 @@ import Modal from './Modal';
 
 class UploadFileModal extends Component {
     modalRef = React.createRef();
+    dragDropAreaRef = React.createRef();
 
     handleOnDragOver = (e) => {
         e.preventDefault();
-        console.log('I am dragged!!');
+        if (this.dragDropAreaRef.current.classList.contains('dragged')) {
+            return null;
+        }
+
+        this.dragDropAreaRef.current.classList.add('dragged');
     }
 
     render() {
         return (
             <Modal ref={this.modalRef}>
                 <section className="uploadFileModal">
-                    <section className="uploadFileModal--dragDropArea" onDragOver={this.handleOnDragOver}>
+                    <section
+                        ref={this.dragDropAreaRef}
+                        className="uploadFileModal--dragDropArea"
+                        onDragOver={this.handleOnDragOver}
+                    >
                         <FontAwesomeIcon className="screenIcon" icon={faFileUpload}/>
                         <h4>Drag and drop image files here</h4>
                     </section>

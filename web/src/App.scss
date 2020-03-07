@@ -762,6 +762,13 @@ input {
     border-radius: 5px;
     flex: 1;
     margin-bottom: calc(#{$container-spacing} * 2);
+    transition: all .5s ease-out;
+
+    &.dragged {
+      color: $color-white;
+      background-color: $color-secondary;
+      opacity: 0.5;
+    }
   }
 
   .screenIcon {
