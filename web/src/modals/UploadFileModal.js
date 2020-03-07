@@ -15,7 +15,7 @@ class UploadFileModal extends Component {
 
     render() {
         return (
-            <Modal ref={this.modalRef}>
+            <Modal refs={this.modalRef}>
                 <section className="uploadFileModal">
                     <section className="uploadFileModal--dragDropArea">
                         <FontAwesomeIcon className="screenIcon" icon={faFileUpload}/>

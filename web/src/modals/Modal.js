@@ -12,7 +12,7 @@ class Modal extends Component {
         }
     }
 
-    closeModal = (e) => {
+    handleCloseModal = (e) => {
         if (!this.modalRef.current.classList.contains('closed')) {
             this.modalRef.current.classList.add('closed');
         }
@@ -23,7 +23,7 @@ class Modal extends Component {
             <section
                 ref={this.modalRef}
                 className="modal"
-                onClick={e => this.closeModal(e)}
+                onClick={e => this.handleCloseModal(e)}
             >
                 <section className="modal--wrapper" onClick={e => e.stopPropagation()}>
                     {this.props.children}
