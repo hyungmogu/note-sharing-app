@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import { withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileUpload } from '@fortawesome/free-solid-svg-icons';
 
+import { AppConsumer } from '../components/Context';
 import Modal from './Modal';
 
 class UploadFileModal extends Component {
@@ -62,4 +62,15 @@ class UploadFileModal extends Component {
     }
 };
 
-export default withRouter(UploadFileModal);
+export default React.forwardRef((props, ref) => (
+    <AppConsumer>
+        { appContext =>
+            <UploadFileModal
+                {...props}
+                appContext={appContext}
+                ref={ref}
+            />
+        }
+    </AppConsumer>
+));
+

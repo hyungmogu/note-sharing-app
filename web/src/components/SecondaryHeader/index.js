@@ -12,8 +12,8 @@ class SecondaryHeader extends Component {
 
     uploadFileModalRef = React.createRef();
 
-    handleOpenUploadFileModal = () => {
-
+    handleOpenUploadFileModal = (e) => {
+        this.uploadFileModalRef.current.handleOpenModal(e);
     }
 
     render() {
@@ -58,6 +58,7 @@ class SecondaryHeader extends Component {
                         <UserMenu/>
                     </li>
                 </ul>
+                <UploadFileModal ref={this.uploadFileModalRef}/>
             </header>
         );
     }
