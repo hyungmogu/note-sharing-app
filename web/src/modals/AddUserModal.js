@@ -17,6 +17,8 @@ class AddUserModal extends Component {
     render() {
         return (
             <Modal ref={this.modalRef}>
+                <section className="addUserModal">
+                </section>
             </Modal>
         );
     }
