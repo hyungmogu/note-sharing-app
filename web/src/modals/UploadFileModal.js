@@ -9,6 +9,10 @@ import Modal from './Modal';
 class UploadFileModal extends Component {
     modalRef = React.createRef();
 
+    componentDidUpdate() {
+        console.log(this.modalRef);
+    }
+
     render() {
         return (
             <Modal ref={this.modalRef}>
@@ -17,7 +21,7 @@ class UploadFileModal extends Component {
                         <FontAwesomeIcon className="screenIcon" icon={faFileUpload}/>
                         <h4>Drag and drop image files here</h4>
                     </section>
-                    <button className="button button--primary">Close</button>
+                    <button onClick={e => this.modalRef.current.closeModal(e)} className="button button--primary">Close</button>
                 </section>
             </Modal>
         );
