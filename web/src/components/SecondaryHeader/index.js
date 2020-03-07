@@ -5,9 +5,16 @@ import { faUserPlus, faCloudUploadAlt, faCloudDownloadAlt } from '@fortawesome/f
 import { withRouter } from 'react-router-dom';
 
 import { AppConsumer } from '../Context';
+import UploadFileModal from '../../modals/UploadFileModal';
 import UserMenu from './UserMenu';
 
 class SecondaryHeader extends Component {
+
+    uploadFileModalRef = React.createRef();
+
+    handleOpenUploadFileModal = () => {
+
+    }
 
     render() {
 
@@ -36,7 +43,7 @@ class SecondaryHeader extends Component {
                         </button>
                     </li>
                     <li>
-                        <button className="button button--uploadFile">
+                        <button onClick={this.handleOpenUploadFileModal} className="button button--uploadFile">
                             <FontAwesomeIcon icon={faCloudUploadAlt}/>
                             Upload File
                         </button>

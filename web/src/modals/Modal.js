@@ -22,7 +22,7 @@ class Modal extends Component {
         return (
             <section
                 ref={this.modalRef}
-                className="modal"
+                className="modal closed"
                 onClick={e => this.handleCloseModal(e)}
             >
                 <section className="modal--wrapper" onClick={e => e.stopPropagation()}>

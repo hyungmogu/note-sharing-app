@@ -10,6 +10,10 @@ class UploadFileModal extends Component {
     modalRef = React.createRef();
     dragDropAreaRef = React.createRef();
 
+    handleOpenModal = (e) => {
+        this.modalRef.current.handleOpenModal(e);
+    }
+
     handleOnDragOver = (e) => {
         e.preventDefault();
         if (this.dragDropAreaRef.current.classList.contains('dragged')) {
