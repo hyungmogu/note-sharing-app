@@ -6,7 +6,7 @@ import { AppConsumer } from '../components/Context';
 class Modal extends Component {
     modalRef = React.createRef();
 
-    openModal = (e) => {
+    handleOpenModal = (e) => {
         if (this.modalRef.current.classList.contains('closed')) {
             this.modalRef.current.classList.remove('closed');
         }
