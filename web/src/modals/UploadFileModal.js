@@ -19,6 +19,15 @@ class UploadFileModal extends Component {
         this.dragDropAreaRef.current.classList.add('dragged');
     }
 
+    handleOnDragLeave = (e) => {
+        e.preventDefault();
+        if (!this.dragDropAreaRef.current.classList.contains('dragged')) {
+            return null;
+        }
+
+        this.dragDropAreaRef.current.classList.remove('dragged');
+    }
+
     render() {
         return (
             <Modal ref={this.modalRef}>
@@ -27,6 +36,7 @@ class UploadFileModal extends Component {
                         ref={this.dragDropAreaRef}
                         className="uploadFileModal--dragDropArea"
                         onDragOver={this.handleOnDragOver}
+                        onDragLeave={this.handleOnDragLeave}
                     >
                         <FontAwesomeIcon className="screenIcon" icon={faFileUpload}/>
                         <h4>Drag and drop image files here</h4>
