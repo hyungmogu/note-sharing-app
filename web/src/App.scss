@@ -80,6 +80,7 @@ input {
     border: 1px solid $color-primary;
     margin-bottom: calc(#{$container-spacing} * 0.5);
     border-radius: 5px;
+    overflow-y: scroll;
   }
 
   .addUserModal--wrapper-input {
