@@ -9,19 +9,15 @@ import Modal from './Modal';
 class UploadFileModal extends Component {
     modalRef = React.createRef();
 
-    componentDidUpdate() {
-        console.log(this.modalRef);
-    }
-
     render() {
         return (
-            <Modal refs={this.modalRef}>
+            <Modal ref={this.modalRef}>
                 <section className="uploadFileModal">
                     <section className="uploadFileModal--dragDropArea">
                         <FontAwesomeIcon className="screenIcon" icon={faFileUpload}/>
                         <h4>Drag and drop image files here</h4>
                     </section>
-                    <button onClick={e => this.modalRef.current.closeModal(e)} className="button button--primary">Close</button>
+                    <button onClick={e => this.modalRef.current.handleCloseModal(e)} className="button button--primary">Close</button>
                 </section>
             </Modal>
         );

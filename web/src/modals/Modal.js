@@ -33,12 +33,10 @@ class Modal extends Component {
     }
 };
 
-let ModalWithRouter =  withRouter(Modal);
-
 export default React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
-            <ModalWithRouter
+            <Modal
                 {...props}
                 appContext={appContext}
                 ref={ref}
