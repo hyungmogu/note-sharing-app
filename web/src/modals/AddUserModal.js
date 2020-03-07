@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import { AppConsumer } from '../components/Context';
 import Modal from './Modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 class AddUserModal extends Component {
     modalRef = React.createRef();
@@ -19,6 +22,10 @@ class AddUserModal extends Component {
             <Modal ref={this.modalRef}>
                 <section className="addUserModal">
                     <section className="addUserModal--wrapper-userList">
+                        <section className="addUserModal--item">
+                            <span className="addUserModal--name">Name goes here</span>
+                            <FontAwesomeIcon icon={faTimes}/>
+                        </section>
                     </section>
                     <section className="addUserModal--wrapper-input">
                         <input className="addUserModal--input" type="email" placeholder="Email"/>

@@ -64,6 +64,16 @@ input {
     margin-bottom: calc(#{$container-spacing} * 0.5);
   }
 
+  .addUserModal--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .addUserModal--name {
+    margin-right: $container-spacing;
+  }
+
   .addUserModal--input {
     flex: 1;
     margin-right: calc(#{$container-spacing} * 0.5);
