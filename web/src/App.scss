@@ -55,13 +55,9 @@ input {
     width: 100%;
   }
 
-  .addUserModal--wrapper-userList {
+  .addUserModal--input {
     flex: 1;
-  }
-
-  .addUserModal--wrapper-input {
-    display: flex;
-    margin-bottom: calc(#{$container-spacing} * 0.5);
+    margin-right: calc(#{$container-spacing} * 0.5);
   }
 
   .addUserModal--item {
@@ -74,9 +70,17 @@ input {
     margin-right: $container-spacing;
   }
 
-  .addUserModal--input {
+  .addUserModal--title {
+    margin-top: 0;
+  }
+
+  .addUserModal--wrapper-userList {
     flex: 1;
-    margin-right: calc(#{$container-spacing} * 0.5);
+  }
+
+  .addUserModal--wrapper-input {
+    display: flex;
+    margin-bottom: calc(#{$container-spacing} * 0.5);
   }
 }
 

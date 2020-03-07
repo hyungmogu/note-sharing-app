@@ -31,9 +31,13 @@ class AddUserModal extends Component {
         return (
             <Modal ref={this.modalRef}>
                 <section className="addUserModal">
+                    <h3 className="addUserModal--title">Add User</h3>
                     <section className="addUserModal--wrapper-userList">
                         { this.state.users.map((item, index) =>
-                            <section className="addUserModal--item">
+                            <section
+                                className="addUserModal--item"
+                                key={item.pk}
+                            >
                                 <span className="addUserModal--name"><strong>{index+1}.</strong> {item.name}</span>
                                 <FontAwesomeIcon icon={faTimes}/>
                             </section>
