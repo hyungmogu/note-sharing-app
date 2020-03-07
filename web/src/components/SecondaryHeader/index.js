@@ -43,7 +43,10 @@ class SecondaryHeader extends Component {
                         </button>
                     </li>
                     <li>
-                        <button onClick={this.handleOpenUploadFileModal} className="button button--uploadFile">
+                        <button
+                            onClick={this.handleOpenUploadFileModal}
+                            className="button button--uploadFile"
+                        >
                             <FontAwesomeIcon icon={faCloudUploadAlt}/>
                             Upload File
                         </button>
