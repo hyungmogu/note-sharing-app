@@ -55,6 +55,10 @@ input {
     width: 100%;
   }
 
+  .addUserModal--wrapper-userList {
+    flex: 1;
+  }
+
   .addUserModal--wrapper-input {
     display: flex;
     margin-bottom: calc(#{$container-spacing} * 0.5);

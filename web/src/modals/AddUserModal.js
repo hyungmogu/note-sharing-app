@@ -18,7 +18,7 @@ class AddUserModal extends Component {
         return (
             <Modal ref={this.modalRef}>
                 <section className="addUserModal">
-                    <section className="addUserModal--userList">
+                    <section className="addUserModal--wrapper-userList">
                     </section>
                     <section className="addUserModal--wrapper-input">
                         <input className="addUserModal--input" type="email" placeholder="Email"/>
