@@ -76,6 +76,9 @@ input {
 
   .addUserModal--wrapper-userList {
     flex: 1;
+    border: 1px solid $color-primary;
+    margin-bottom: calc(#{$container-spacing} * 0.5);
+    border-radius: 5px;
   }
 
   .addUserModal--wrapper-input {
