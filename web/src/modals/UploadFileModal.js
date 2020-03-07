@@ -14,6 +14,10 @@ class UploadFileModal extends Component {
         this.modalRef.current.handleOpenModal(e);
     }
 
+    handleCloseModal = (e) => {
+        this.modalRef.current.handleCloseModal(e);
+    }
+
     handleOnDragOver = (e) => {
         e.preventDefault();
         if (this.dragDropAreaRef.current.classList.contains('dragged')) {
@@ -51,7 +55,7 @@ class UploadFileModal extends Component {
                         <FontAwesomeIcon className="screenIcon" icon={faFileUpload}/>
                         <h4>Drag and drop image files here</h4>
                     </section>
-                    <button onClick={e => this.modalRef.current.handleCloseModal(e)} className="button button--primary">Close</button>
+                    <button onClick={e => this.handleCloseModal(e)} className="button button--primary">Close</button>
                 </section>
             </Modal>
         );
