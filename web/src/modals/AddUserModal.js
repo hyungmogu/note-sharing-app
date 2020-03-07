@@ -15,6 +15,11 @@ class AddUserModal extends Component {
                 pk: 1,
                 name: 'John Doe',
                 email: 'johnDoe@gmail.com'
+            },
+            {
+                pk: 2,
+                name: 'James Li',
+                email: 'johnDoe@gmail.com'
             }
         ]
     }
