@@ -18,7 +18,7 @@ class AddUserModal extends Component {
         return (
             <Modal ref={this.modalRef}>
                 <section className="addUserModal">
-                <button onClick={e => this.handleCloseModal(e)} className="button button--primary">Close</button>
+                    <button onClick={e => this.handleCloseModal(e)} className="button button--primary">Close</button>
                 </section>
             </Modal>
         );

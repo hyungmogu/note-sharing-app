@@ -46,6 +46,16 @@ input {
 
 }
 
+.addUserModal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .button {
+    width: 100%;
+  }
+}
+
 .button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -750,6 +760,7 @@ input {
   display: flex;
   flex-direction: column;
   height: 100%;
+
   .button {
     width: 100%;
   }
