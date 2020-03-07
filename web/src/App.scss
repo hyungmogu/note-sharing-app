@@ -56,10 +56,12 @@ input {
   }
 
   .addUserModal--wrapper-input {
+    display: flex;
     margin-bottom: calc(#{$container-spacing} * 0.5);
   }
 
   .addUserModal--input {
+    flex: 1;
     margin-right: calc(#{$container-spacing} * 0.5);
   }
 }
