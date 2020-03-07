@@ -6,14 +6,20 @@ import { withRouter } from 'react-router-dom';
 
 import { AppConsumer } from '../Context';
 import UploadFileModal from '../../modals/UploadFileModal';
+import AddUserModal from '../../modals/AddUserModal';
 import UserMenu from './UserMenu';
 
 class SecondaryHeader extends Component {
 
     uploadFileModalRef = React.createRef();
+    addUserModalRef = React.createRef();
 
     handleOpenUploadFileModal = (e) => {
         this.uploadFileModalRef.current.handleOpenModal(e);
+    }
+
+    handleOpenAddUserModal = (e) => {
+        this.addUserModalRef.current.handleOpenModal(e);
     }
 
     render() {
@@ -52,7 +58,10 @@ class SecondaryHeader extends Component {
                         </button>
                     </li>
                     <li>
-                        <button className="button button--addUser">
+                        <button
+                            onClick={this.handleOpenAddUserModal}
+                            className="button button--addUser"
+                        >
                             <FontAwesomeIcon icon={faUserPlus}/>
                             Add User
                         </button>
@@ -62,6 +71,7 @@ class SecondaryHeader extends Component {
                     </li>
                 </ul>
                 <UploadFileModal ref={this.uploadFileModalRef}/>
+                <AddUserModal ref={this.addUserModalRef}/>
             </header>
         );
     }
