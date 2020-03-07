@@ -51,8 +51,12 @@ input {
   flex-direction: column;
   height: 100%;
 
-  .button {
+  & > .button {
     width: 100%;
+  }
+
+  .addUserModal--wrapper-input {
+    margin-bottom: calc(#{$container-spacing} * 0.5);
   }
 }
 
